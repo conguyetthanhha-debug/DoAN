@@ -1,0 +1,9 @@
+C:\Users\loile\source\repos\textktx\BUS\bin\Debug\BUS.dll
+C:\Users\loile\source\repos\textktx\BUS\bin\Debug\BUS.pdb
+C:\Users\loile\source\repos\textktx\BUS\bin\Debug\DAL.dll
+C:\Users\loile\source\repos\textktx\BUS\bin\Debug\DAL.pdb
+C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.dll
+C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.pdb
