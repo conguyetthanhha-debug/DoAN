@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CACFORM\FromInDangKy.cs">
+    <Compile Include="CACFORM\FormSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromInDangKy.Designer.cs">
-      <DependentUpon>FromInDangKy.cs</DependentUpon>
+    <Compile Include="CACFORM\FormSinhVien.Designer.cs">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="CACFORM\FromTongQuan.cs">
+    <Compile Include="CACFORM\FormInDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromTongQuan.Designer.cs">
-      <DependentUpon>FromTongQuan.cs</DependentUpon>
+    <Compile Include="CACFORM\FormInDangKy.Designer.cs">
+      <DependentUpon>FormInDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CACFORM\FormTongQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CACFORM\FormTongQuan.Designer.cs">
+      <DependentUpon>FormTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="CACFORM\FormTimkiem.cs">
       <SubType>Form</SubType>
@@ -64,30 +70,23 @@
     <Compile Include="CACFORM\FormTimkiem.Designer.cs">
       <DependentUpon>FormTimkiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="CACFORM\FromSinhVien.cs">
+    <Compile Include="CACFORM\FormPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\.Designer.cs">
-      <DependentUpon>FromSinhVien.cs</DependentUpon>
+    <Compile Include="CACFORM\FormPhong.Designer.cs">
+      <DependentUpon>FormPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CACFORM\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromPhong.cs">
+    <Compile Include="CACFORM\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CACFORM\FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromPhong.Designer.cs">
-      <DependentUpon>FromPhong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CACFORM\FromMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CACFORM\FromMain.Designer.cs">
-      <DependentUpon>FromMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CACFORM\FromNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CACFORM\FromNhanVien.Designer.cs">
-      <DependentUpon>FromNhanVien.cs</DependentUpon>
+    <Compile Include="CACFORM\FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="CACFORM\FormLoaiPhong.cs">
       <SubType>Form</SubType>
@@ -101,11 +100,11 @@
     <Compile Include="CACFORM\FormHoaDon.Designer.cs">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="CACFORM\FromDichVu.cs">
+    <Compile Include="CACFORM\FormDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromDichVu.Designer.cs">
-      <DependentUpon>FromDichVu.cs</DependentUpon>
+    <Compile Include="CACFORM\FormDichVu.Designer.cs">
+      <DependentUpon>FormDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="CACFORM\FormDangNhap.cs">
       <SubType>Form</SubType>
@@ -113,11 +112,11 @@
     <Compile Include="CACFORM\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="CACFORM\FromPhieuDangKy.cs">
+    <Compile Include="CACFORM\FormPhieuDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CACFORM\FromPhieuDangKy.Designer.cs">
-      <DependentUpon>FromPhieuDangKy.cs</DependentUpon>
+    <Compile Include="CACFORM\FormPhieuDangKy.Designer.cs">
+      <DependentUpon>FormPhieuDangKy.cs</DependentUpon>
     </Compile>
     <Compile Include="CACFORM\FormHuongDan.cs">
       <SubType>Form</SubType>
@@ -127,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CACFORM\FormSinhVien.resx">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CACFORM\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,20 +138,32 @@
     <EmbeddedResource Include="CACFORM\FormHuongDan.resx">
       <DependentUpon>FormHuongDan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FromInDangKy.resx">
-      <DependentUpon>FromInDangKy.cs</DependentUpon>
+    <EmbeddedResource Include="CACFORM\FormLoaiPhong.resx">
+      <DependentUpon>FormLoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FromMain.resx">
-      <DependentUpon>FromMain.cs</DependentUpon>
+    <EmbeddedResource Include="CACFORM\FormTimkiem.resx">
+      <DependentUpon>FormTimkiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FromSinhVien.resx">
-      <DependentUpon>FromSinhVien.cs</DependentUpon>
+    <EmbeddedResource Include="CACFORM\FormDichVu.resx">
+      <DependentUpon>FormDichVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FromNhanVien.resx">
-      <DependentUpon>FromNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="CACFORM\FormInDangKy.resx">
+      <DependentUpon>FormInDangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FromPhieuDangKy.resx">
-      <DependentUpon>FromPhieuDangKy.cs</DependentUpon>
+    <EmbeddedResource Include="CACFORM\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CACFORM\FormPhong.resx">
+      <DependentUpon>FormPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CACFORM\FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CACFORM\FormPhieuDangKy.resx">
+      <DependentUpon>FormPhieuDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CACFORM\FormTongQuan.resx">
+      <DependentUpon>FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

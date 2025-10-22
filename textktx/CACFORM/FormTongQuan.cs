@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace textktx.CACFORM
 {
-    public partial class FromInDangKy : Form
+    public partial class FormTongQuan : Form
     {
-        public FromInDangKy()
+        public FormTongQuan()
         {
             InitializeComponent();
         }

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace textktx.CACFORM
 {
-    public partial class FromPhong : Form
+    public partial class FormNhanVien : Form
     {
-        public FromPhong()
+        public FormNhanVien()
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

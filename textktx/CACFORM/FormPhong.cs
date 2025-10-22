@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace textktx.CACFORM
 {
-    public partial class Form1 : Form
+    public partial class FormPhong : Form
     {
-        public Form1()
+        public FormPhong()
         {
             InitializeComponent();
         }

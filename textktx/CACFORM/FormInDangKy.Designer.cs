@@ -1,6 +1,6 @@
 ﻿namespace textktx.CACFORM
 {
-    partial class FromInDangKy
+    partial class FormInDangKy
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Goldenrod;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(187)))), ((int)(((byte)(238)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
@@ -131,14 +131,14 @@
             this.tabHoaDon.Text = "Hóa đơn dịch vụ";
             this.tabHoaDon.UseVisualStyleBackColor = true;
             // 
-            // FromInDangKy
+            // FormInDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FromInDangKy";
+            this.Name = "FormInDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "In";
             this.tableLayoutPanel1.ResumeLayout(false);

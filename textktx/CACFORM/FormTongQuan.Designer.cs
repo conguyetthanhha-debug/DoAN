@@ -1,6 +1,6 @@
 ﻿namespace textktx.CACFORM
 {
-    partial class FromTongQuan
+    partial class FormTongQuan
     {
         /// <summary>
         /// Required designer variable.
@@ -39,40 +39,44 @@
             this.pnTop.Controls.Add(this.lbTitle);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(800, 80);
+            this.pnTop.Size = new System.Drawing.Size(1200, 123);
             this.pnTop.TabIndex = 0;
             // 
             // lbTitle
             // 
-            this.lbTitle.BackColor = System.Drawing.Color.Goldenrod;
+            this.lbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(187)))), ((int)(((byte)(238)))));
             this.lbTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTitle.ForeColor = System.Drawing.Color.Black;
             this.lbTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(800, 80);
+            this.lbTitle.Size = new System.Drawing.Size(1200, 123);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "THÔNG TIN";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnContainer
             // 
-            this.pnContainer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnContainer.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pnContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnContainer.Location = new System.Drawing.Point(0, 80);
+            this.pnContainer.Location = new System.Drawing.Point(0, 123);
+            this.pnContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnContainer.Name = "pnContainer";
-            this.pnContainer.Size = new System.Drawing.Size(800, 370);
+            this.pnContainer.Size = new System.Drawing.Size(1200, 569);
             this.pnContainer.TabIndex = 1;
             // 
-            // Form2
+            // FromTongQuan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnContainer);
             this.Controls.Add(this.pnTop);
-            this.Name = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "FromTongQuan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin";
             this.pnTop.ResumeLayout(false);

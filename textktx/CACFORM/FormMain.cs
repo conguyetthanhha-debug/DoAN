@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace textktx.CACFORM
 {
-    public partial class FromNhanVien : Form
+    public partial class FormMain : Form
     {
-        public FromNhanVien()
+        public FormMain()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

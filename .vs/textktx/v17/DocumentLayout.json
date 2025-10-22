@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\loile\\source\\repos\\textktx\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\frommain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\frommain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|C:\\Users\\loile\\source\\repos\\textktx\\textktx\\cacform\\frommain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\frommain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|C:\\Users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|C:\\Users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formtongquan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtongquan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formhuongdan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formhuongdan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|c:\\users\\loile\\source\\repos\\textktx\\textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,50 +74,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FromMain.cs",
-              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FromMain.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FromMain.cs",
-              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FromMain.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FromMain.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormTimkiem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormTimkiem.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormTimkiem.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T08:33:28.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FromMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FromMain.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FromMain.cs",
-              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FromMain.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FromMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T08:32:25.385Z",
+              "WhenOpened": "2025-10-22T04:41:36.484Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "FormPhong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormPhong.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhong.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormPhong.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:24.177Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormTongQuan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormTongQuan.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTongQuan.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormTongQuan.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormTongQuan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:41.496Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormSinhVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormSinhVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormSinhVien.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormSinhVien.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormSinhVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:31.484Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormMain.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormMain.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormMain.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:54.793Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormPhieuDangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormPhieuDangKy.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhieuDangKy.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:15.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormNhanVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormNhanVien.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:10.072Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormLoaiPhong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormLoaiPhong.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormLoaiPhong.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormLoaiPhong.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormLoaiPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:49.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormInDangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormInDangKy.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormInDangKy.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormInDangKy.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormInDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:40.951Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormHuongDan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormHuongDan.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormHuongDan.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormHuongDan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:30.632Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FormHoaDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormHoaDon.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHoaDon.cs",
               "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormHoaDon.cs [Design]",
               "RelativeToolTip": "textktx\\CACFORM\\FormHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T08:16:47.958Z"
+              "WhenOpened": "2025-10-22T04:34:35.308Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "FormDichVu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormDichVu.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDichVu.cs",
+              "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormDichVu.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormDichVu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:34:26.701Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "FormDangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDangNhap.cs",
               "ToolTip": "C:\\Users\\loile\\source\\repos\\textktx\\textktx\\CACFORM\\FormDangNhap.cs [Design]",
               "RelativeToolTip": "textktx\\CACFORM\\FormDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T08:16:23.937Z"
+              "WhenOpened": "2025-10-22T04:34:13.32Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

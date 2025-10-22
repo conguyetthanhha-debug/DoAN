@@ -63,15 +63,17 @@
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(835, 45);
+            this.pnTop.Size = new System.Drawing.Size(976, 45);
             this.pnTop.TabIndex = 1;
             // 
             // lbTitle
             // 
+            this.lbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(187)))), ((int)(((byte)(238)))));
             this.lbTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbTitle.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.Location = new System.Drawing.Point(0, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(835, 45);
+            this.lbTitle.Size = new System.Drawing.Size(976, 45);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "THÔNG TIN HÓA ĐƠN";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,7 +87,7 @@
             this.pnContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnContainer.Location = new System.Drawing.Point(0, 45);
             this.pnContainer.Name = "pnContainer";
-            this.pnContainer.Size = new System.Drawing.Size(835, 730);
+            this.pnContainer.Size = new System.Drawing.Size(976, 769);
             this.pnContainer.TabIndex = 0;
             // 
             // dgvHoaDon
@@ -98,11 +100,11 @@
             this.SoLuong,
             this.DonViTinh});
             this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHoaDon.Location = new System.Drawing.Point(0, 205);
+            this.dgvHoaDon.Location = new System.Drawing.Point(0, 257);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidth = 62;
-            this.dgvHoaDon.Size = new System.Drawing.Size(835, 485);
+            this.dgvHoaDon.Size = new System.Drawing.Size(976, 456);
             this.dgvHoaDon.TabIndex = 0;
             // 
             // MaDV
@@ -147,38 +149,47 @@
             this.panel1.Controls.Add(this.lbSoLuong);
             this.panel1.Controls.Add(this.lbTenDV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 115);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 139);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 90);
+            this.panel1.Size = new System.Drawing.Size(976, 118);
             this.panel1.TabIndex = 1;
             // 
             // lbDonVi
             // 
-            this.lbDonVi.Location = new System.Drawing.Point(20, 65);
+            this.lbDonVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDonVi.Location = new System.Drawing.Point(560, 92);
             this.lbDonVi.Name = "lbDonVi";
-            this.lbDonVi.Size = new System.Drawing.Size(100, 23);
+            this.lbDonVi.Size = new System.Drawing.Size(131, 26);
             this.lbDonVi.TabIndex = 0;
             this.lbDonVi.Text = "Đơn vị tính:";
             // 
             // btnXoaDV
             // 
-            this.btnXoaDV.Location = new System.Drawing.Point(460, 45);
+            this.btnXoaDV.BackColor = System.Drawing.Color.Salmon;
+            this.btnXoaDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaDV.Location = new System.Drawing.Point(856, 31);
             this.btnXoaDV.Name = "btnXoaDV";
-            this.btnXoaDV.Size = new System.Drawing.Size(75, 23);
+            this.btnXoaDV.Size = new System.Drawing.Size(108, 43);
             this.btnXoaDV.TabIndex = 1;
             this.btnXoaDV.Text = "Xóa";
+            this.btnXoaDV.UseVisualStyleBackColor = false;
             // 
             // btnThemDV
             // 
-            this.btnThemDV.Location = new System.Drawing.Point(460, 10);
+            this.btnThemDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThemDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemDV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnThemDV.Location = new System.Drawing.Point(715, 31);
             this.btnThemDV.Name = "btnThemDV";
-            this.btnThemDV.Size = new System.Drawing.Size(75, 23);
+            this.btnThemDV.Size = new System.Drawing.Size(108, 43);
             this.btnThemDV.TabIndex = 2;
             this.btnThemDV.Text = "Thêm";
+            this.btnThemDV.UseVisualStyleBackColor = false;
             // 
             // numSoLuong
             // 
-            this.numSoLuong.Location = new System.Drawing.Point(120, 40);
+            this.numSoLuong.Location = new System.Drawing.Point(230, 62);
             this.numSoLuong.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -190,7 +201,7 @@
             0,
             0});
             this.numSoLuong.Name = "numSoLuong";
-            this.numSoLuong.Size = new System.Drawing.Size(120, 26);
+            this.numSoLuong.Size = new System.Drawing.Size(430, 29);
             this.numSoLuong.TabIndex = 3;
             this.numSoLuong.Value = new decimal(new int[] {
             1,
@@ -201,24 +212,26 @@
             // cmbTenDV
             // 
             this.cmbTenDV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTenDV.Location = new System.Drawing.Point(120, 10);
+            this.cmbTenDV.Location = new System.Drawing.Point(230, 18);
             this.cmbTenDV.Name = "cmbTenDV";
-            this.cmbTenDV.Size = new System.Drawing.Size(121, 28);
+            this.cmbTenDV.Size = new System.Drawing.Size(430, 29);
             this.cmbTenDV.TabIndex = 4;
             // 
             // lbSoLuong
             // 
-            this.lbSoLuong.Location = new System.Drawing.Point(40, 42);
+            this.lbSoLuong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoLuong.Location = new System.Drawing.Point(124, 57);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(100, 23);
+            this.lbSoLuong.Size = new System.Drawing.Size(121, 34);
             this.lbSoLuong.TabIndex = 5;
             this.lbSoLuong.Text = "Số lượng:";
             // 
             // lbTenDV
             // 
-            this.lbTenDV.Location = new System.Drawing.Point(40, 13);
+            this.lbTenDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenDV.Location = new System.Drawing.Point(124, 15);
             this.lbTenDV.Name = "lbTenDV";
-            this.lbTenDV.Size = new System.Drawing.Size(100, 23);
+            this.lbTenDV.Size = new System.Drawing.Size(100, 32);
             this.lbTenDV.TabIndex = 6;
             this.lbTenDV.Text = "Dịch vụ:";
             // 
@@ -228,34 +241,41 @@
             this.pnContainerBottom.Controls.Add(this.btnHoanTat);
             this.pnContainerBottom.Controls.Add(this.btnInHoaDon);
             this.pnContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnContainerBottom.Location = new System.Drawing.Point(0, 690);
+            this.pnContainerBottom.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnContainerBottom.Location = new System.Drawing.Point(0, 713);
             this.pnContainerBottom.Name = "pnContainerBottom";
-            this.pnContainerBottom.Size = new System.Drawing.Size(835, 40);
+            this.pnContainerBottom.Size = new System.Drawing.Size(976, 56);
             this.pnContainerBottom.TabIndex = 2;
             // 
             // btnXoaHD
             // 
-            this.btnXoaHD.Location = new System.Drawing.Point(20, 8);
+            this.btnXoaHD.BackColor = System.Drawing.Color.Salmon;
+            this.btnXoaHD.Location = new System.Drawing.Point(0, 0);
             this.btnXoaHD.Name = "btnXoaHD";
-            this.btnXoaHD.Size = new System.Drawing.Size(75, 23);
+            this.btnXoaHD.Size = new System.Drawing.Size(138, 56);
             this.btnXoaHD.TabIndex = 0;
             this.btnXoaHD.Text = "Xóa";
+            this.btnXoaHD.UseVisualStyleBackColor = false;
             // 
             // btnHoanTat
             // 
-            this.btnHoanTat.Location = new System.Drawing.Point(230, 8);
+            this.btnHoanTat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnHoanTat.Location = new System.Drawing.Point(443, 0);
             this.btnHoanTat.Name = "btnHoanTat";
-            this.btnHoanTat.Size = new System.Drawing.Size(75, 23);
+            this.btnHoanTat.Size = new System.Drawing.Size(127, 56);
             this.btnHoanTat.TabIndex = 1;
             this.btnHoanTat.Text = "Hoàn tất";
+            this.btnHoanTat.UseVisualStyleBackColor = false;
             // 
             // btnInHoaDon
             // 
-            this.btnInHoaDon.Location = new System.Drawing.Point(440, 8);
+            this.btnInHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnInHoaDon.Location = new System.Drawing.Point(831, 0);
             this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Size = new System.Drawing.Size(75, 23);
+            this.btnInHoaDon.Size = new System.Drawing.Size(145, 56);
             this.btnInHoaDon.TabIndex = 2;
             this.btnInHoaDon.Text = "In hóa đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
             // 
             // pnContainerTop
             // 
@@ -272,9 +292,10 @@
             this.pnContainerTop.Controls.Add(this.lbKhu);
             this.pnContainerTop.Controls.Add(this.label1);
             this.pnContainerTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnContainerTop.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnContainerTop.Location = new System.Drawing.Point(0, 0);
             this.pnContainerTop.Name = "pnContainerTop";
-            this.pnContainerTop.Size = new System.Drawing.Size(835, 115);
+            this.pnContainerTop.Size = new System.Drawing.Size(976, 139);
             this.pnContainerTop.TabIndex = 3;
             // 
             // txtThang
@@ -292,99 +313,100 @@
             "10",
             "11",
             "12"});
-            this.txtThang.Location = new System.Drawing.Point(220, 28);
+            this.txtThang.Location = new System.Drawing.Point(402, 31);
             this.txtThang.Name = "txtThang";
-            this.txtThang.Size = new System.Drawing.Size(121, 28);
+            this.txtThang.Size = new System.Drawing.Size(192, 36);
             this.txtThang.TabIndex = 0;
             // 
             // txtNamHoc
             // 
-            this.txtNamHoc.Location = new System.Drawing.Point(220, 81);
+            this.txtNamHoc.Location = new System.Drawing.Point(402, 99);
             this.txtNamHoc.Name = "txtNamHoc";
-            this.txtNamHoc.Size = new System.Drawing.Size(100, 26);
+            this.txtNamHoc.Size = new System.Drawing.Size(192, 34);
             this.txtNamHoc.TabIndex = 1;
             // 
             // dtNgayHD
             // 
-            this.dtNgayHD.Location = new System.Drawing.Point(20, 81);
+            this.dtNgayHD.Location = new System.Drawing.Point(76, 99);
             this.dtNgayHD.Name = "dtNgayHD";
-            this.dtNgayHD.Size = new System.Drawing.Size(200, 26);
+            this.dtNgayHD.Size = new System.Drawing.Size(255, 34);
             this.dtNgayHD.TabIndex = 2;
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(20, 28);
+            this.txtMaNV.Location = new System.Drawing.Point(76, 31);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(100, 26);
+            this.txtMaNV.Size = new System.Drawing.Size(200, 34);
             this.txtMaNV.TabIndex = 3;
             // 
             // lbNhanVien
             // 
-            this.lbNhanVien.Location = new System.Drawing.Point(20, 10);
+            this.lbNhanVien.Location = new System.Drawing.Point(71, 3);
             this.lbNhanVien.Name = "lbNhanVien";
-            this.lbNhanVien.Size = new System.Drawing.Size(100, 23);
+            this.lbNhanVien.Size = new System.Drawing.Size(144, 36);
             this.lbNhanVien.TabIndex = 4;
             this.lbNhanVien.Text = "Nhân viên:";
             // 
             // lbNgay
             // 
-            this.lbNgay.Location = new System.Drawing.Point(20, 61);
+            this.lbNgay.Location = new System.Drawing.Point(71, 65);
             this.lbNgay.Name = "lbNgay";
-            this.lbNgay.Size = new System.Drawing.Size(100, 23);
+            this.lbNgay.Size = new System.Drawing.Size(100, 37);
             this.lbNgay.TabIndex = 5;
             this.lbNgay.Text = "Ngày lập hóa đơn:";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(220, 61);
+            this.label2.Location = new System.Drawing.Point(397, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(100, 37);
             this.label2.TabIndex = 6;
             this.label2.Text = "Năm học:";
             // 
             // cmbPhong
             // 
-            this.cmbPhong.Location = new System.Drawing.Point(410, 81);
+            this.cmbPhong.Location = new System.Drawing.Point(716, 97);
             this.cmbPhong.Name = "cmbPhong";
-            this.cmbPhong.Size = new System.Drawing.Size(121, 28);
+            this.cmbPhong.Size = new System.Drawing.Size(182, 36);
             this.cmbPhong.TabIndex = 7;
             // 
             // cmbKhu
             // 
-            this.cmbKhu.Location = new System.Drawing.Point(410, 28);
+            this.cmbKhu.Location = new System.Drawing.Point(716, 31);
             this.cmbKhu.Name = "cmbKhu";
-            this.cmbKhu.Size = new System.Drawing.Size(121, 28);
+            this.cmbKhu.Size = new System.Drawing.Size(182, 36);
             this.cmbKhu.TabIndex = 8;
             // 
             // lbPhong
             // 
-            this.lbPhong.Location = new System.Drawing.Point(410, 61);
+            this.lbPhong.Location = new System.Drawing.Point(711, 70);
             this.lbPhong.Name = "lbPhong";
-            this.lbPhong.Size = new System.Drawing.Size(100, 23);
+            this.lbPhong.Size = new System.Drawing.Size(100, 35);
             this.lbPhong.TabIndex = 9;
             this.lbPhong.Text = "Phòng:";
             // 
             // lbKhu
             // 
-            this.lbKhu.Location = new System.Drawing.Point(410, 10);
+            this.lbKhu.Location = new System.Drawing.Point(711, 3);
             this.lbKhu.Name = "lbKhu";
-            this.lbKhu.Size = new System.Drawing.Size(100, 23);
+            this.lbKhu.Size = new System.Drawing.Size(100, 33);
             this.lbKhu.TabIndex = 10;
             this.lbKhu.Text = "Khu:";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(220, 10);
+            this.label1.Location = new System.Drawing.Point(397, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(100, 36);
             this.label1.TabIndex = 11;
             this.label1.Text = "Tháng:";
             // 
             // FormHoaDon
             // 
-            this.ClientSize = new System.Drawing.Size(835, 775);
+            this.ClientSize = new System.Drawing.Size(976, 814);
             this.Controls.Add(this.pnContainer);
             this.Controls.Add(this.pnTop);
+            this.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa đơn";

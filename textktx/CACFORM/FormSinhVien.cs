@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace textktx.CACFORM
 {
-    public partial class FromMain : Form
+    public partial class FormSinhVien : Form
     {
-        public FromMain()
+        public FormSinhVien()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void txtCMND_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBHYT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
         {
 
         }
