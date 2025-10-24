@@ -26,7 +26,6 @@ namespace textktx.CACFORM
         {
             FormSinhVien frm = new FormSinhVien();
             frm.Show();
-            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,19 +44,48 @@ namespace textktx.CACFORM
         {
             FormPhieuDangKy frm = new FormPhieuDangKy();
             frm.Show();
-            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             FormHoaDon formHoaDon = new FormHoaDon();
             formHoaDon.Show();
-            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            FormkhuPhong formkhuPhong = new FormkhuPhong();
+            formkhuPhong.Show();
+        }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FormNhanVien formNhan = new FormNhanVien();
+            formNhan.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FormCacTheLoaiPhong frmLoai = new FormCacTheLoaiPhong();
+            frmLoai.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            FormCacLoaiDichVu formDichVu = new FormCacLoaiDichVu();
+            formDichVu.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            FormTimkiem formTimkiem = new FormTimkiem(false);
+            formTimkiem.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FormHuongDan formHuong = new FormHuongDan();    
+            formHuong.Show();
         }
     }
 }

@@ -11,8 +11,6 @@ namespace DAL.Services
     {
         public bool KiemTraDangNhap(string username, string password)
         {
-
-
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
                 return false;
 

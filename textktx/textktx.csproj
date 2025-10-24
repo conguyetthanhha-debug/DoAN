@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CACFORM\FormCacLoaiDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CACFORM\FormCacLoaiDichVu.Designer.cs">
+      <DependentUpon>FormCacLoaiDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CACFORM\FormCacTheLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CACFORM\FormCacTheLoaiPhong.Designer.cs">
+      <DependentUpon>FormCacTheLoaiPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="CACFORM\FormkhuPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,12 +85,6 @@
     </Compile>
     <Compile Include="CACFORM\FormInDangKy.Designer.cs">
       <DependentUpon>FormInDangKy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CACFORM\FormTongQuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CACFORM\FormTongQuan.Designer.cs">
-      <DependentUpon>FormTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="CACFORM\FormTimkiem.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CACFORM\FormCacLoaiDichVu.resx">
+      <DependentUpon>FormCacLoaiDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CACFORM\FormCacTheLoaiPhong.resx">
+      <DependentUpon>FormCacTheLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CACFORM\FormkhuPhong.resx">
       <DependentUpon>FormkhuPhong.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,9 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CACFORM\FormPhieuDangKy.resx">
       <DependentUpon>FormPhieuDangKy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FormTongQuan.resx">
-      <DependentUpon>FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

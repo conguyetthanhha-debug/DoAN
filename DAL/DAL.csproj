@@ -66,6 +66,10 @@
     <Compile Include="Model\SINHVIEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DangNhapDAL.cs" />
+    <Compile Include="Services\DichVuDAL.cs" />
+    <Compile Include="Services\LoaiPhongDAL.cs" />
+    <Compile Include="Services\NhanVienDAL.cs" />
+    <Compile Include="Services\TimKiemDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

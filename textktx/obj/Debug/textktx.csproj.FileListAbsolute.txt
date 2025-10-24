@@ -31,7 +31,6 @@ D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormMain.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormPhong.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormNhanVien.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormPhieuDangKy.resources
-D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormTongQuan.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.Properties.Resources.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.csproj.GenerateResource.cache
 D:\c#\DoAN\textktx\obj\Debug\textktx.csproj.CoreCompileInputs.cache
@@ -52,3 +51,5 @@ D:\c#\DoAN\textktx\obj\Debug\textktx.exe.config
 D:\c#\DoAN\textktx\bin\Debug\EntityFramework.SqlServer.dll
 D:\c#\DoAN\textktx\bin\Debug\EntityFramework.SqlServer.xml
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormkhuPhong.resources
+D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormCacTheLoaiPhong.resources
+D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormCacLoaiDichVu.resources

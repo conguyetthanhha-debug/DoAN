@@ -44,8 +44,8 @@ namespace DAL.Model
         [StringLength(20)]
         public string MaNQL { get; set; }
 
-        [StringLength(255)]
-        public string AnhChanDung { get; set; }
+        [Column(TypeName = "varbinary(max)")]
+        public byte[] AnhChanDung { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DANGNHAP> DANGNHAPs { get; set; }

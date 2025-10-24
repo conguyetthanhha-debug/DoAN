@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using DAL.Model;
+using System;
 using System.Windows.Forms;
 
 namespace textktx.CACFORM
@@ -15,6 +10,25 @@ namespace textktx.CACFORM
         public FormDichVu()
         {
             InitializeComponent();
+        }
+
+        public FormDichVu(DICHVU dv) : this()
+        {
+            Bind(dv);
+        }
+
+        public void Bind(DICHVU dv)
+        {
+            if (dv == null) return;
+            txtMaDV.Text = dv.MaDV;
+            txtTenDV.Text = dv.TenDV;
+            txtGiaDV.Text = dv.GiaDV.ToString("#,##0");
+            txtDonViTinh.Text = dv.DonViTinh;
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

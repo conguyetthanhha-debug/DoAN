@@ -1,0 +1,201 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using DAL.Model;
+
+namespace DAL.Services
+{
+    public class SinhVienVm
+    {
+        public string MSSV { get; set; }
+        public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
+        public DateTime? NgSinh { get; set; }
+        public string CMND { get; set; }
+        public string Email { get; set; }
+        public string SDT { get; set; }
+        public string QueQuan { get; set; }
+    }
+
+    public class NhanVienVm
+    {
+        public string MaNV { get; set; }
+        public string HoTen { get; set; }
+        public string CMND { get; set; }
+        public string SDT { get; set; }
+        public string Email { get; set; }
+        public string DiaChi { get; set; }
+        public int? Luong { get; set; }
+        public string MaNQL { get; set; }
+    }
+
+    public class PhieuDKVm
+    {
+        public int MaPDK { get; set; }
+        public string MSSV { get; set; }
+        public string TenSV { get; set; }
+        public string MaNV { get; set; }
+        public string TenNV { get; set; }
+        public string Khu { get; set; }
+        public string MaPhong { get; set; }
+        public string HocKi { get; set; }
+        public string NamHoc { get; set; }
+        public DateTime NgayGioDK { get; set; }
+        public int ThoiHan { get; set; }
+        public DateTime NgayBD { get; set; }
+    }
+
+    public class HoaDonVm
+    {
+        public int MaHD { get; set; }
+        public short Nam { get; set; }
+        public byte Thang { get; set; }
+        public DateTime NgayHD { get; set; }
+        public string Khu { get; set; }
+        public string MaPhong { get; set; }
+        public string MaNV { get; set; }
+        public string TenNV { get; set; }
+        public decimal TongTienDichVu { get; set; }
+    }
+
+    public class PhongVm
+    {
+        public string Khu { get; set; }
+        public string MaPhong { get; set; }
+        public string LoaiPhong { get; set; }
+        public int SucChua { get; set; }
+        public decimal DienTich { get; set; }
+        public int DonGia { get; set; }
+        public int DangO { get; set; }
+        public string TrangThai { get; set; }
+    }
+
+    public class TimKiemDAL
+    {
+        public List<SinhVienVm> GetSinhVien()
+        {
+            using (var db = new Model1())
+            {
+                return db.SINHVIENs
+                    .AsNoTracking()
+                    .OrderBy(s => s.HoTen)
+                    .Select(s => new SinhVienVm
+                    {
+                        MSSV = s.MSSV,
+                        HoTen = s.HoTen,
+                        GioiTinh = s.Phai ? "Nam" : "Nữ",
+                        NgSinh = s.NgSinh,
+                        CMND = s.CMND,
+                        Email = s.Email,
+                        SDT = s.SDT,
+                        QueQuan = s.QueQuan
+                    })
+                    .ToList();
+            }
+        }
+
+        public List<NhanVienVm> GetNhanVien()
+        {
+            using (var db = new Model1())
+            {
+                return db.NHANVIENs
+                    .AsNoTracking()
+                    .OrderBy(n => n.HoTen)
+                    .Select(n => new NhanVienVm
+                    {
+                        MaNV = n.MaNV,
+                        HoTen = n.HoTen,
+                        CMND = n.CMND,
+                        SDT = n.SDT,
+                        Email = n.Email,
+                        DiaChi = n.DiaChi,
+                        Luong = n.Luong,
+                        MaNQL = n.MaNQL
+                    })
+                    .ToList();
+            }
+        }
+
+        public List<PhieuDKVm> GetPhieuDK()
+        {
+            using (var db = new Model1())
+            {
+                return db.PHIEUDKs
+                    .Include(p => p.SINHVIEN)
+                    .Include(p => p.NHANVIEN)
+                    .AsNoTracking()
+                    .OrderByDescending(p => p.NgayGioDK)
+                    .Select(p => new PhieuDKVm
+                    {
+                        MaPDK = p.MaPDK,
+                        MSSV = p.MSSV,
+                        TenSV = p.SINHVIEN.HoTen,
+                        MaNV = p.MaNV,
+                        TenNV = p.NHANVIEN.HoTen,
+                        Khu = p.Khu,
+                        MaPhong = p.MaPhong,
+                        HocKi = p.HocKi,
+                        NamHoc = p.NamHoc,
+                        NgayGioDK = p.NgayGioDK,
+                        ThoiHan = p.ThoiHan,
+                        NgayBD = p.NgayBD
+                    })
+                    .ToList();
+            }
+        }
+
+        public List<HoaDonVm> GetHoaDon()
+        {
+            using (var db = new Model1())
+            {
+                var q =
+                    from hd in db.HOADONs.Include(h => h.NHANVIEN)
+                    join sd in db.SDDVs on hd.MaHD equals sd.MaHD into g
+                    select new HoaDonVm
+                    {
+                        MaHD = hd.MaHD,
+                        Nam = hd.Nam,
+                        Thang = hd.Thang,
+                        NgayHD = hd.NgayHD,
+                        Khu = hd.Khu,
+                        MaPhong = hd.MaPhong,
+                        MaNV = hd.MaNV,
+                        TenNV = hd.NHANVIEN.HoTen,
+                        TongTienDichVu = g
+                            .Join(db.DICHVUs, s => s.MaDV, dv => dv.MaDV, (s, dv) => (decimal)(s.SoLuong * dv.GiaDV))
+                            .DefaultIfEmpty(0m)
+                            .Sum()
+                    };
+
+                return q.OrderByDescending(x => x.Nam)
+                        .ThenByDescending(x => x.Thang)
+                        .ThenByDescending(x => x.MaHD)
+                        .AsNoTracking()
+                        .ToList();
+            }
+        }
+
+        public List<PhongVm> GetPhong(string khu = "", string maPhong = "")
+        {
+            using (var db = new Model1())
+            {
+                string sql = @"
+SELECT  P.Khu,
+        P.MaPhong,
+        P.LoaiPhong,
+        LP.SoSV   AS SucChua,
+        LP.DienTich,
+        LP.DonGia,
+        ISNULL(X.CurSV, 0) AS DangO,
+        CASE WHEN ISNULL(X.CurSV,0) < LP.SoSV THEN N'Còn chỗ' ELSE N'Đủ chỗ' END AS TrangThai
+FROM    dbo.PHONG AS P
+INNER JOIN dbo.LOAIPHONG AS LP ON LP.MaLoaiPhong = P.LoaiPhong
+OUTER APPLY (SELECT COUNT(*) AS CurSV FROM dbo.STAY S WHERE S.Khu = P.Khu AND S.MaPhong = P.MaPhong) X
+WHERE (@p0 = '' OR P.Khu = @p0) AND (@p1 = '' OR P.MaPhong = @p1)
+ORDER BY P.Khu, P.MaPhong;";
+                return db.Database.SqlQuery<PhongVm>(sql, khu ?? "", maPhong ?? "").ToList();
+            }
+        }
+    }
+}
