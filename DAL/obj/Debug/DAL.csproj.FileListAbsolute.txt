@@ -4,3 +4,15 @@ C:\Users\loile\source\repos\textktx\DAL\obj\Debug\DAL.csproj.AssemblyReference.c
 C:\Users\loile\source\repos\textktx\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\loile\source\repos\textktx\DAL\obj\Debug\DAL.dll
 C:\Users\loile\source\repos\textktx\DAL\obj\Debug\DAL.pdb
+D:\c#\DoAN\DAL\bin\Debug\DAL.dll
+D:\c#\DoAN\DAL\bin\Debug\DAL.pdb
+D:\c#\DoAN\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\c#\DoAN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\c#\DoAN\DAL\obj\Debug\DAL.dll
+D:\c#\DoAN\DAL\obj\Debug\DAL.pdb
+D:\c#\DoAN\DAL\bin\Debug\DAL.dll.config
+D:\c#\DoAN\DAL\bin\Debug\EntityFramework.dll
+D:\c#\DoAN\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\c#\DoAN\DAL\bin\Debug\EntityFramework.xml
+D:\c#\DoAN\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\c#\DoAN\DAL\obj\Debug\DAL.csproj.Up2Date

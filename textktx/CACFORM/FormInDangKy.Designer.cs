@@ -51,11 +51,11 @@
             this.tableLayoutPanel1.Controls.Add(this.btnXuat, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 57);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(889, 46);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -66,7 +66,7 @@
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 57);
+            this.label1.Size = new System.Drawing.Size(303, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã số:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -75,10 +75,10 @@
             // 
             this.txtInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtInput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput.Location = new System.Drawing.Point(354, 5);
-            this.txtInput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtInput.Location = new System.Drawing.Point(315, 4);
+            this.txtInput.Margin = new System.Windows.Forms.Padding(4);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(292, 39);
+            this.txtInput.Size = new System.Drawing.Size(258, 34);
             this.txtInput.TabIndex = 1;
             this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -88,10 +88,10 @@
             this.btnXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXuat.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuat.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnXuat.Location = new System.Drawing.Point(654, 5);
-            this.btnXuat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXuat.Location = new System.Drawing.Point(581, 4);
+            this.btnXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(112, 47);
+            this.btnXuat.Size = new System.Drawing.Size(100, 38);
             this.btnXuat.TabIndex = 2;
             this.btnXuat.Text = "XUẤT";
             this.btnXuat.UseVisualStyleBackColor = true;
@@ -102,42 +102,43 @@
             this.tabControl.Controls.Add(this.tabHoaDon);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl.Location = new System.Drawing.Point(0, 57);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabControl.Location = new System.Drawing.Point(0, 46);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1000, 543);
+            this.tabControl.Size = new System.Drawing.Size(889, 434);
             this.tabControl.TabIndex = 1;
             // 
             // tabPhieuDK
             // 
-            this.tabPhieuDK.Location = new System.Drawing.Point(4, 41);
-            this.tabPhieuDK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPhieuDK.Location = new System.Drawing.Point(4, 37);
+            this.tabPhieuDK.Margin = new System.Windows.Forms.Padding(4);
             this.tabPhieuDK.Name = "tabPhieuDK";
-            this.tabPhieuDK.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPhieuDK.Size = new System.Drawing.Size(992, 498);
+            this.tabPhieuDK.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPhieuDK.Size = new System.Drawing.Size(881, 393);
             this.tabPhieuDK.TabIndex = 0;
             this.tabPhieuDK.Text = "Phiếu đăng ký phòng";
             this.tabPhieuDK.UseVisualStyleBackColor = true;
             // 
             // tabHoaDon
             // 
-            this.tabHoaDon.Location = new System.Drawing.Point(4, 41);
-            this.tabHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabHoaDon.Location = new System.Drawing.Point(4, 37);
+            this.tabHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.tabHoaDon.Name = "tabHoaDon";
-            this.tabHoaDon.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabHoaDon.Size = new System.Drawing.Size(992, 498);
+            this.tabHoaDon.Padding = new System.Windows.Forms.Padding(4);
+            this.tabHoaDon.Size = new System.Drawing.Size(881, 393);
             this.tabHoaDon.TabIndex = 1;
             this.tabHoaDon.Text = "Hóa đơn dịch vụ";
             this.tabHoaDon.UseVisualStyleBackColor = true;
             // 
             // FormInDangKy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(889, 480);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormInDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "In";

@@ -44,9 +44,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1268, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1127, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 152);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -55,37 +56,39 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(49, 63);
+            this.pictureBox2.Location = new System.Drawing.Point(44, 50);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(645, 679);
+            this.pictureBox2.Size = new System.Drawing.Size(573, 543);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(877, 347);
+            this.textBox1.Location = new System.Drawing.Point(780, 278);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 40);
+            this.textBox1.Size = new System.Drawing.Size(354, 34);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(877, 478);
+            this.textBox2.Location = new System.Drawing.Point(780, 382);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(398, 40);
+            this.textBox2.Size = new System.Drawing.Size(354, 34);
             this.textBox2.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(805, 190);
+            this.label2.Location = new System.Drawing.Point(716, 152);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(558, 70);
+            this.label2.Size = new System.Drawing.Size(475, 60);
             this.label2.TabIndex = 3;
             this.label2.Text = "Đăng Nhập Tài Khoản";
             // 
@@ -94,9 +97,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(868, 290);
+            this.label3.Location = new System.Drawing.Point(772, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(301, 54);
+            this.label3.Size = new System.Drawing.Size(256, 46);
             this.label3.TabIndex = 4;
             this.label3.Text = "Tên đăng nhập";
             // 
@@ -105,9 +108,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(868, 421);
+            this.label4.Location = new System.Drawing.Point(772, 337);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 54);
+            this.label4.Size = new System.Drawing.Size(171, 46);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mật khẩu";
             // 
@@ -116,19 +119,21 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(39)))), ((int)(((byte)(119)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(927, 560);
+            this.button1.Location = new System.Drawing.Point(824, 448);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 89);
+            this.button1.Size = new System.Drawing.Size(267, 71);
             this.button1.TabIndex = 8;
             this.button1.Text = "Đăng Nhập";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(175)))), ((int)(((byte)(212)))));
-            this.ClientSize = new System.Drawing.Size(1432, 794);
+            this.ClientSize = new System.Drawing.Size(1273, 635);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -137,8 +142,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDangNhap";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

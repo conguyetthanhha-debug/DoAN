@@ -7,3 +7,15 @@ C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.c
 C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.csproj.Up2Date
 C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.dll
 C:\Users\loile\source\repos\textktx\BUS\obj\Debug\BUS.pdb
+D:\c#\DoAN\BUS\bin\Debug\BUS.dll
+D:\c#\DoAN\BUS\bin\Debug\BUS.pdb
+D:\c#\DoAN\BUS\bin\Debug\DAL.dll
+D:\c#\DoAN\BUS\bin\Debug\DAL.pdb
+D:\c#\DoAN\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\c#\DoAN\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\c#\DoAN\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\c#\DoAN\BUS\obj\Debug\BUS.dll
+D:\c#\DoAN\BUS\obj\Debug\BUS.pdb
+D:\c#\DoAN\BUS\bin\Debug\EntityFramework.dll
+D:\c#\DoAN\BUS\bin\Debug\DAL.dll.config
+D:\c#\DoAN\BUS\bin\Debug\EntityFramework.xml
