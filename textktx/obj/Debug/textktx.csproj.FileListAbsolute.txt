@@ -51,3 +51,4 @@ D:\c#\DoAN\textktx\obj\Debug\textktx.csproj.Up2Date
 D:\c#\DoAN\textktx\obj\Debug\textktx.exe.config
 D:\c#\DoAN\textktx\bin\Debug\EntityFramework.SqlServer.dll
 D:\c#\DoAN\textktx\bin\Debug\EntityFramework.SqlServer.xml
+D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormkhuPhong.resources

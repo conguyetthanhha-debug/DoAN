@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CACFORM\FormkhuPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CACFORM\FormkhuPhong.Designer.cs">
+      <DependentUpon>FormkhuPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="CACFORM\FormSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CACFORM\FormkhuPhong.resx">
+      <DependentUpon>FormkhuPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CACFORM\FormSinhVien.resx">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
     </EmbeddedResource>
