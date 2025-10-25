@@ -4,12 +4,14 @@
     using System.Drawing;
     using System.IO;
     using System.Windows.Forms;
+    using DAL.Services;
 
-    namespace textktx.CACFORM
+namespace textktx.CACFORM
     {
         public partial class FormNhanVien : Form
         {
-            private readonly NhanVienBUS _bus = new NhanVienBUS();
+        public event Action<NhanVienVm> NhanVienSelected;
+        private readonly NhanVienBUS _bus = new NhanVienBUS();
             private byte[] _anhBytes;
 
             public FormNhanVien()
@@ -90,9 +92,98 @@
                 }
             }
 
-            private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var f = new FormTimkiem(tknv: true);
+            f.NhanVienSelected += OnNhanVienPicked;
+            f.Show(this);
+        }
+
+        private void OnNhanVienPicked(NhanVienVm vm)
+        {
+            if (vm == null) return;
+
+            txtMaNV.Text = vm.MaNV;
+            txtHoTen.Text = vm.HoTen;
+            txtCMND.Text = vm.CMND;
+            txtSDT.Text = vm.SDT;
+            txtEmail.Text = vm.Email;
+            txtDiaChi.Text = vm.DiaChi;
+            txtMaNQL.Text = vm.MaNQL;
+            txtLuong.Text = vm.Luong?.ToString() ?? "";
+
+            // Nếu muốn hiển thị ảnh luôn, có 2 cách:
+            // Cách A: mở rộng NhanVienVm có byte[] AnhChanDung (khuyên dùng để tránh query thêm)
+            // Cách B: query 1 lần theo MaNV để lấy ảnh:
+            try
             {
-                new FormTimkiem(tknv: true).Show();
+                var dal = new DAL.Services.NhanVienDAL();
+                var nvFull = dal.GetByMa(vm.MaNV);     // thêm method này ở DAL (mục 3)
+                if (nvFull?.AnhChanDung != null && nvFull.AnhChanDung.Length > 0)
+                {
+                    using (var ms = new System.IO.MemoryStream(nvFull.AnhChanDung))
+                    {
+                        picAvt.Image = Image.FromStream(ms);
+                        _anhBytes = nvFull.AnhChanDung; // giữ lại để khi Sửa/Lưu không mất ảnh
+                    }
+                }
+                else
+                {
+                    picAvt.Image = null;
+                    _anhBytes = null;
+                }
+            }
+            catch { /* tùy ý log */ }
+        }
+
+
+        private void ClearForm()
+        {
+            txtMaNV.Clear();
+            txtHoTen.Clear();
+            txtCMND.Clear();
+            txtSDT.Clear();
+            txtEmail.Clear();
+            txtDiaChi.Clear();
+            txtMaNQL.Clear();
+            txtLuong.Clear();
+            picAvt.Image = null;
+            _anhBytes = null;
+        }
+
+        private void button2_Click(object sender, EventArgs e) 
+        {
+            var ma = txtMaNV.Text?.Trim();
+
+            if (string.IsNullOrEmpty(ma))
+            {
+                MessageBox.Show("Vui lòng nhập Mã NV cần xóa.", "Thiếu dữ liệu",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var confirm = MessageBox.Show($"Bạn chắc chắn muốn xóa nhân viên '{ma}'?",
+                                          "Xác nhận xóa",
+                                          MessageBoxButtons.YesNo,
+                                          MessageBoxIcon.Question);
+
+            if (confirm != DialogResult.Yes) return;
+
+            string error;
+            var ok = _bus.XoaNhanVien(ma, out error);
+
+            if (ok)
+            {
+                MessageBox.Show("Đã xóa nhân viên thành công.", "Thành công",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearForm();
+            }
+            else
+            {
+                MessageBox.Show(error ?? "Không thể xóa do là admin.", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
+}

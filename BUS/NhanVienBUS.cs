@@ -46,5 +46,11 @@ namespace BUS
             Validate(nv, isUpdate: true);
             return _dal.Update(nv);
         }
+
+        public bool XoaNhanVien(string maNV, out string error)
+           => _dal.XoaNhanVien(maNV, out error);
+
+        public NHANVIEN LayNhanVienTheoMa(string ma) => _dal.GetById(ma);
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿
 using BUS;
+using DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,20 @@ namespace textktx.CACFORM
         private readonly bool timKiemNhanVien;
         private readonly TimKiemBUS _svc;
         private TableKind _current = TableKind.None;
+        public event Action<NhanVienVm> NhanVienSelected;
 
         public FormTimkiem(bool tknv = false)
         {
+
             InitializeComponent();
             timKiemNhanVien = tknv;
             _svc = new TimKiemBUS();
             this.Shown += FormTimkiem_Shown;
+
+           
+            dgv.CellDoubleClick += dgv_CellDoubleClick;  
+            // Nếu muốn 1 click thì mở thêm dòng dưới:
+            // dgv.CellClick += dgv_CellClick;
         }
 
         private static readonly string[] COL_SV = { "Tất cả", "MSSV", "HoTen", "GioiTinh", "NgSinh", "CMND", "Email", "SDT", "QueQuan" };
@@ -108,6 +116,20 @@ namespace textktx.CACFORM
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
             DoSearch(); 
+        }
+
+        private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+           => PickCurrentRow(e.RowIndex);
+        private void PickCurrentRow(int rowIndex)
+        {
+            if (rowIndex < 0) return;
+            if (_current != TableKind.NhanVien) return;
+
+            var vm = dgv.Rows[rowIndex].DataBoundItem as NhanVienVm;
+            if (vm == null) return;
+
+            NhanVienSelected?.Invoke(vm); // bắn dữ liệu cho form gọi
+            Close();                      // đóng form tìm kiếm (tuỳ ý)
         }
     }
 }

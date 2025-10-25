@@ -31,5 +31,10 @@ namespace textktx.CACFORM
         {
 
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

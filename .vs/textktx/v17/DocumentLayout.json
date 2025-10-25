@@ -3,6 +3,82 @@
   "WorkspaceRootPath": "D:\\c#\\DoAN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|D:\\c#\\DoAN\\dal\\services\\nhanviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|solutionrelative:dal\\services\\nhanviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|D:\\c#\\DoAN\\dal\\services\\timkiemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|solutionrelative:dal\\services\\timkiemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|d:\\c#\\doan\\textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\timkiembus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\timkiembus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\tablekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\tablekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|d:\\c#\\doan\\textktx\\cacform\\formhuongdan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formhuongdan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,32 +91,8 @@
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formhuongdan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formphieudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -49,30 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formkhuphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formkhuphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formindangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formtimkiem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formtimkiem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\timkiembus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\timkiembus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\tablekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\tablekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|D:\\c#\\DoAN\\dal\\services\\timkiemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|solutionrelative:dal\\services\\timkiemdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formcacloaidichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,32 +139,8 @@
       "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formcactheloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|D:\\c#\\DoAN\\bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC1B7691-56EC-42FA-B651-2E1A43121946}|BUS\\BUS.csproj|solutionrelative:bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|D:\\c#\\DoAN\\dal\\services\\nhanviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|solutionrelative:dal\\services\\nhanviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|D:\\c#\\DoAN\\dal\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F8BAB51-9264-4D4B-AB57-E6B49CD754C3}|DAL\\DAL.csproj|solutionrelative:dal\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\cacform\\formnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|solutionrelative:textktx\\cacform\\formnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7674C33D-F255-4F6D-9FA1-651FED80E632}|textktx\\textktx.csproj|D:\\c#\\DoAN\\textktx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -230,11 +234,274 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FormNhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:10.072Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormNhanVien.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAALEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:05:29.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanVienDAL.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\NhanVienDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\NhanVienDAL.cs",
+              "ToolTip": "D:\\c#\\DoAN\\DAL\\Services\\NhanVienDAL.cs",
+              "RelativeToolTip": "DAL\\Services\\NhanVienDAL.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswGoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T16:59:27.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TimKiemDAL.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\TimKiemDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Services\\TimKiemDAL.cs",
+              "ToolTip": "D:\\c#\\DoAN\\DAL\\Services\\TimKiemDAL.cs",
+              "RelativeToolTip": "DAL\\Services\\TimKiemDAL.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wL0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:42:48.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDangNhap.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:34:13.32Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormTimkiem.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAiwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:12:44.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormTimkiem.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:36.484Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormSinhVien.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormSinhVien.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormSinhVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:31.484Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhanVienBUS.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\NhanVienBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\NhanVienBUS.cs",
+              "ToolTip": "D:\\c#\\DoAN\\BUS\\NhanVienBUS.cs",
+              "RelativeToolTip": "BUS\\NhanVienBUS.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:00:03.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormSinhVien.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormSinhVien.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormSinhVien.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T09:39:02.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormPhieuDangKy.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhieuDangKy.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhieuDangKy.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:15.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormPhong.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhong.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhong.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhong.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormPhong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:41:24.177Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TimKiemBUS.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\TimKiemBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\TimKiemBUS.cs",
+              "ToolTip": "D:\\c#\\DoAN\\BUS\\TimKiemBUS.cs",
+              "RelativeToolTip": "BUS\\TimKiemBUS.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:55:51.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TableKind.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\TableKind.cs",
+              "RelativeDocumentMoniker": "BUS\\TableKind.cs",
+              "ToolTip": "D:\\c#\\DoAN\\BUS\\TableKind.cs",
+              "RelativeToolTip": "BUS\\TableKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:44:52.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormNhanVien.Designer.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.Designer.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.Designer.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.Designer.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.Designer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwJgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T16:53:04.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormTimkiem.Designer.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.Designer.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.Designer.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.Designer.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.Designer.cs",
+              "ViewState": "AgIAACcBAAAAAAAAAAAAAFEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:23:43.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormMain.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormMain.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAEwFAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T08:48:36.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormInDangKy.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormInDangKy.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormInDangKy.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormInDangKy.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormInDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:40.951Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormMain.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:54.793Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormHuongDan.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs [Design]",
+              "RelativeToolTip": "textktx\\CACFORM\\FormHuongDan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:40:30.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FormHuongDan.cs",
+              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
+              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.cs",
+              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
+              "RelativeToolTip": "textktx\\CACFORM\\FormHuongDan.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T18:54:50.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "FormHuongDan.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.Designer.cs",
@@ -246,76 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormHuongDan.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormHuongDan.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T18:54:50.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormTimkiem.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:41:36.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormTimkiem.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAA0wGUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:12:44.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormHuongDan.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHuongDan.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHuongDan.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormHuongDan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:40:30.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormPhong.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhong.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhong.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhong.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:41:24.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormSinhVien.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormSinhVien.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormSinhVien.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormSinhVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:41:31.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "FormLoaiPhong.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormLoaiPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormLoaiPhong.cs",
@@ -326,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "FormHoaDon.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormHoaDon.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormHoaDon.cs",
@@ -337,29 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormMain.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormMain.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:40:54.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormPhieuDangKy.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhieuDangKy.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormPhieuDangKy.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormPhieuDangKy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:41:15.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "FormkhuPhong.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormkhuPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormkhuPhong.cs",
@@ -370,30 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormInDangKy.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormInDangKy.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormInDangKy.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormInDangKy.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormInDangKy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:40:40.951Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormTimkiem.Designer.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.Designer.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormTimkiem.Designer.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormTimkiem.Designer.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormTimkiem.Designer.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAlwI0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:43.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "FormCacLoaiDichVu.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacLoaiDichVu.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacLoaiDichVu.cs",
@@ -405,55 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TimKiemDAL.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\TimKiemDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Services\\TimKiemDAL.cs",
-              "ToolTip": "D:\\c#\\DoAN\\DAL\\Services\\TimKiemDAL.cs",
-              "RelativeToolTip": "DAL\\Services\\TimKiemDAL.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAAwMkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:42:48.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TimKiemBUS.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\TimKiemBUS.cs",
-              "RelativeDocumentMoniker": "BUS\\TimKiemBUS.cs",
-              "ToolTip": "D:\\c#\\DoAN\\BUS\\TimKiemBUS.cs",
-              "RelativeToolTip": "BUS\\TimKiemBUS.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAswHoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:55:51.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormMain.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormMain.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormMain.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormMain.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwEoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T08:48:36.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TableKind.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\TableKind.cs",
-              "RelativeDocumentMoniker": "BUS\\TableKind.cs",
-              "ToolTip": "D:\\c#\\DoAN\\BUS\\TableKind.cs",
-              "RelativeToolTip": "BUS\\TableKind.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T18:44:52.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "FormCacLoaiDichVu.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacLoaiDichVu.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacLoaiDichVu.cs",
@@ -464,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "FormDichVu.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDichVu.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDichVu.cs",
@@ -475,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "FormDichVu.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDichVu.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDichVu.cs",
@@ -487,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "DichVuBUS.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\DichVuBUS.cs",
               "RelativeDocumentMoniker": "BUS\\DichVuBUS.cs",
@@ -499,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "DichVuDAL.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\DichVuDAL.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\DichVuDAL.cs",
@@ -511,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "FormDichVu.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDichVu.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDichVu.Designer.cs",
@@ -523,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "FormCacLoaiDichVu.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacLoaiDichVu.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacLoaiDichVu.Designer.cs",
@@ -535,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "FormCacTheLoaiPhong.cs [Design]",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacTheLoaiPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacTheLoaiPhong.cs",
@@ -546,41 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDangNhap.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:34:13.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "FormNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs [Design]",
-              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T04:41:10.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "FormNhanVien.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:05:29.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\Program.cs",
               "RelativeDocumentMoniker": "textktx\\Program.cs",
@@ -592,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "NHANVIEN.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Model\\NHANVIEN.cs",
               "RelativeDocumentMoniker": "DAL\\Model\\NHANVIEN.cs",
@@ -604,43 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "NhanVienBUS.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\NhanVienBUS.cs",
-              "RelativeDocumentMoniker": "BUS\\NhanVienBUS.cs",
-              "ToolTip": "D:\\c#\\DoAN\\BUS\\NhanVienBUS.cs",
-              "RelativeToolTip": "BUS\\NhanVienBUS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T17:00:03.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "NhanVienDAL.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\NhanVienDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Services\\NhanVienDAL.cs",
-              "ToolTip": "D:\\c#\\DoAN\\DAL\\Services\\NhanVienDAL.cs",
-              "RelativeToolTip": "DAL\\Services\\NhanVienDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T16:59:27.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FormNhanVien.Designer.cs",
-              "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.Designer.cs",
-              "RelativeDocumentMoniker": "textktx\\CACFORM\\FormNhanVien.Designer.cs",
-              "ToolTip": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormNhanVien.Designer.cs",
-              "RelativeToolTip": "textktx\\CACFORM\\FormNhanVien.Designer.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAuwIwBAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T16:53:04.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "FormkhuPhong.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormkhuPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormkhuPhong.cs",
@@ -652,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "LoaiPhongDAL.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\LoaiPhongDAL.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\LoaiPhongDAL.cs",
@@ -664,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "FormLoaiPhong.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormLoaiPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormLoaiPhong.cs",
@@ -676,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "LoaiPhongBUS.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\LoaiPhongBUS.cs",
               "RelativeDocumentMoniker": "BUS\\LoaiPhongBUS.cs",
@@ -688,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Model1.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Model\\Model1.cs",
               "RelativeDocumentMoniker": "DAL\\Model\\Model1.cs",
@@ -700,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "DangNhapBUS.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\BUS\\DangNhapBUS.cs",
               "RelativeDocumentMoniker": "BUS\\DangNhapBUS.cs",
@@ -712,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "FormCacTheLoaiPhong.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacTheLoaiPhong.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacTheLoaiPhong.cs",
@@ -724,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "FormCacTheLoaiPhong.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormCacTheLoaiPhong.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormCacTheLoaiPhong.Designer.cs",
@@ -736,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "FormLoaiPhong.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormLoaiPhong.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormLoaiPhong.Designer.cs",
@@ -748,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "FormLoaiPhong.resx",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormLoaiPhong.resx",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormLoaiPhong.resx",
@@ -759,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "FormkhuPhong.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormkhuPhong.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormkhuPhong.Designer.cs",
@@ -771,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "FormkhuPhong.resx",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormkhuPhong.resx",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormkhuPhong.resx",
@@ -782,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "DangNhapDAL.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Services\\DangNhapDAL.cs",
               "RelativeDocumentMoniker": "DAL\\Services\\DangNhapDAL.cs",
@@ -794,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "DANGNHAP.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Model\\DANGNHAP.cs",
               "RelativeDocumentMoniker": "DAL\\Model\\DANGNHAP.cs",
@@ -806,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Class1.cs",
               "RelativeDocumentMoniker": "DAL\\Class1.cs",
@@ -818,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "PHIEUDK.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\Model\\PHIEUDK.cs",
               "RelativeDocumentMoniker": "DAL\\Model\\PHIEUDK.cs",
@@ -830,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "FormDangNhap.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDangNhap.cs",
@@ -838,11 +873,12 @@
               "RelativeToolTip": "textktx\\CACFORM\\FormDangNhap.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T08:42:26.246Z"
+              "WhenOpened": "2025-10-23T08:42:26.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "App.config",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\App.config",
               "RelativeDocumentMoniker": "textktx\\App.config",
@@ -850,11 +886,12 @@
               "RelativeToolTip": "textktx\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-23T10:13:59.739Z"
+              "WhenOpened": "2025-10-23T10:13:59.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "App.Config",
               "DocumentMoniker": "D:\\c#\\DoAN\\DAL\\App.Config",
               "RelativeDocumentMoniker": "DAL\\App.Config",
@@ -862,11 +899,12 @@
               "RelativeToolTip": "DAL\\App.Config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-23T10:14:34.882Z"
+              "WhenOpened": "2025-10-23T10:14:34.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "FormDangNhap.Designer.cs",
               "DocumentMoniker": "D:\\c#\\DoAN\\textktx\\CACFORM\\FormDangNhap.Designer.cs",
               "RelativeDocumentMoniker": "textktx\\CACFORM\\FormDangNhap.Designer.cs",
@@ -874,7 +912,8 @@
               "RelativeToolTip": "textktx\\CACFORM\\FormDangNhap.Designer.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAewJMAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T08:45:03.691Z"
+              "WhenOpened": "2025-10-23T08:45:03.691Z",
+              "EditorCaption": ""
             }
           ]
         }
