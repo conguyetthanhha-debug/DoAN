@@ -14,6 +14,7 @@ namespace textktx.CACFORM
         private readonly TimKiemBUS _svc;
         private TableKind _current = TableKind.None;
         public event Action<NhanVienVm> NhanVienSelected;
+        public event Action<DAL.Services.SinhVienVm> SinhVienSelected;
 
         public FormTimkiem(bool tknv = false)
         {
@@ -41,6 +42,11 @@ namespace textktx.CACFORM
                 BeginInvoke(new Action(() => SetCurrent(TableKind.NhanVien)));
         }
 
+        public void ShowSinhVien()
+        {
+            
+            btnSinhVien_Click(this, EventArgs.Empty);
+        }
         private void SetCurrent(TableKind kind)
         {
             _current = kind;
@@ -123,13 +129,24 @@ namespace textktx.CACFORM
         private void PickCurrentRow(int rowIndex)
         {
             if (rowIndex < 0) return;
-            if (_current != TableKind.NhanVien) return;
 
-            var vm = dgv.Rows[rowIndex].DataBoundItem as NhanVienVm;
-            if (vm == null) return;
+            if (_current == TableKind.NhanVien)
+            {
+                var vm = dgv.Rows[rowIndex].DataBoundItem as NhanVienVm;
+                if (vm == null) return;
+                NhanVienSelected?.Invoke(vm);
+                Close();
+                return;
+            }
 
-            NhanVienSelected?.Invoke(vm); // bắn dữ liệu cho form gọi
-            Close();                      // đóng form tìm kiếm (tuỳ ý)
+            if (_current == TableKind.SinhVien)
+            {
+                var svm = dgv.Rows[rowIndex].DataBoundItem as DAL.Services.SinhVienVm;
+                if (svm == null) return;
+                SinhVienSelected?.Invoke(svm);
+                Close();
+                return;
+            }
         }
     }
 }

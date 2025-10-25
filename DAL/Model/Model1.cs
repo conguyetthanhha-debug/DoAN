@@ -26,6 +26,11 @@ namespace DAL.Model
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+     
+            modelBuilder.Entity<SINHVIEN>().Ignore(s => s.PHONG);
+            modelBuilder.Entity<PHONG>().Ignore(p => p.SINHVIENs);
+
+
             modelBuilder.Entity<DANGNHAP>()
                 .Property(e => e.TenDN)
                 .IsUnicode(false);
@@ -156,9 +161,7 @@ namespace DAL.Model
                 .Property(e => e.MSSV)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<SINHVIEN>()
-                .Property(e => e.MaLop)
-                .IsUnicode(false);
+    
 
             modelBuilder.Entity<SINHVIEN>()
                 .Property(e => e.CMND)

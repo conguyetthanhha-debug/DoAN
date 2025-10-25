@@ -41,11 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSession.cs" />
+    <Compile Include="DangKyBUS.cs" />
     <Compile Include="DangNhapBUS.cs" />
     <Compile Include="DichVuBUS.cs" />
+    <Compile Include="HoaDonBUS.cs" />
     <Compile Include="LoaiPhongBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
+    <Compile Include="PhongBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVienBUS.cs" />
     <Compile Include="TableKind.cs" />
     <Compile Include="TimKiemBUS.cs" />
   </ItemGroup>

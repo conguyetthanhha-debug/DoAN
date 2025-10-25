@@ -30,7 +30,6 @@ D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormInDangKy.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormMain.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormPhong.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormNhanVien.resources
-D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormPhieuDangKy.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.Properties.Resources.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.csproj.GenerateResource.cache
 D:\c#\DoAN\textktx\obj\Debug\textktx.csproj.CoreCompileInputs.cache

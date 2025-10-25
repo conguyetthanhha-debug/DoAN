@@ -134,12 +134,6 @@
     <Compile Include="CACFORM\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="CACFORM\FormPhieuDangKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CACFORM\FormPhieuDangKy.Designer.cs">
-      <DependentUpon>FormPhieuDangKy.cs</DependentUpon>
-    </Compile>
     <Compile Include="CACFORM\FormHuongDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CACFORM\FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CACFORM\FormPhieuDangKy.resx">
-      <DependentUpon>FormPhieuDangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -42,7 +42,7 @@ namespace textktx.CACFORM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormPhieuDangKy frm = new FormPhieuDangKy();
+            FormInDangKy frm = new FormInDangKy();
             frm.Show();
         }
 

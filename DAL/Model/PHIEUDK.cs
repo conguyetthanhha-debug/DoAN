@@ -29,14 +29,13 @@ namespace DAL.Model
         public string MaPhong { get; set; }
 
         [Required]
-        [StringLength(20)]
-        public string HocKi { get; set; }
+        public int HocKi { get; set; }
 
         [Required]
         [StringLength(20)]
         public string NamHoc { get; set; }
 
-        [Column(TypeName = "datetime2")]
+        [Column(TypeName = "DateTime")]
         public DateTime NgayGioDK { get; set; }
 
         public int ThoiHan { get; set; }

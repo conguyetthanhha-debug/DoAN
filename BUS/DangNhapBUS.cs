@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using DAL.Model;
-using DAL.Services;
+﻿using DAL.Services;
 
 namespace BUS
 {
@@ -9,9 +6,18 @@ namespace BUS
     {
         private readonly DangNhapDAL dal = new DangNhapDAL();
 
-        public bool DangNhap(string username, string password)
+        public bool DangNhap(string username, string password, out string maNV)
         {
-            return dal.KiemTraDangNhap(username, password);
+            maNV = null;
+
+            var ok = dal.KiemTraDangNhap(username, password);
+            if (ok)
+            {
+                
+                maNV = dal.GetMaNVByUsername(username);
+            }
+
+            return ok;
         }
     }
 }

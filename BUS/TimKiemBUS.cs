@@ -1,4 +1,5 @@
 ﻿using DAL.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -31,7 +32,7 @@ namespace BUS
                             (column == "MSSV" && (x.MSSV ?? "").ToLower().Contains(keyword)) ||
                             (column == "HoTen" && (x.HoTen ?? "").ToLower().Contains(keyword)) ||
                             (column == "GioiTinh" && (x.GioiTinh ?? "").ToLower().Contains(keyword)) ||
-                            (column == "NgSinh" && (x.NgSinh?.ToString("yyyy-MM-dd") ?? "").Contains(keyword)) ||
+                            (column == "NgSinh" && ((x.NgSinh?.ToString("yyyy-MM-dd")) ?? "").Contains(keyword)) ||
                             (column == "CMND" && (x.CMND ?? "").ToLower().Contains(keyword)) ||
                             (column == "Email" && (x.Email ?? "").ToLower().Contains(keyword)) ||
                             (column == "SDT" && (x.SDT ?? "").ToLower().Contains(keyword)) ||
@@ -45,7 +46,8 @@ namespace BUS
                         if (string.IsNullOrWhiteSpace(keyword) || column == "Tất cả")
                             return src;
 
-                        bool isNum = int.TryParse(keyword, out var v);
+                        bool isLuong = int.TryParse(keyword, out var vLuong);
+
                         return src.Where(x =>
                             (column == "MaNV" && (x.MaNV ?? "").ToLower().Contains(keyword)) ||
                             (column == "HoTen" && (x.HoTen ?? "").ToLower().Contains(keyword)) ||
@@ -54,26 +56,28 @@ namespace BUS
                             (column == "Email" && (x.Email ?? "").ToLower().Contains(keyword)) ||
                             (column == "DiaChi" && (x.DiaChi ?? "").ToLower().Contains(keyword)) ||
                             (column == "MaNQL" && (x.MaNQL ?? "").ToLower().Contains(keyword)) ||
-                            (column == "Luong" && isNum && (x.Luong ?? -1) == v)
+                            (column == "Luong" && isLuong && (x.Luong ?? -1) == vLuong)
                         );
                     }
 
                 case TableKind.Phong:
                     {
-                        var src = LayDanhSachPhong(); // đã join + tính trạng thái ở DAL
+                        var src = LayDanhSachPhong();
                         if (string.IsNullOrWhiteSpace(keyword) || column == "Tất cả")
                             return src;
 
-                        bool isNum = int.TryParse(keyword, out var v);
+                        bool isInt = int.TryParse(keyword, out var vInt);
+                        bool isDec = decimal.TryParse(keyword, out var vDec);
+
                         return src.Where(x =>
                             (column == "Khu" && (x.Khu ?? "").ToLower().Contains(keyword)) ||
                             (column == "MaPhong" && (x.MaPhong ?? "").ToLower().Contains(keyword)) ||
                             (column == "LoaiPhong" && (x.LoaiPhong ?? "").ToLower().Contains(keyword)) ||
                             (column == "TrangThai" && (x.TrangThai ?? "").ToLower().Contains(keyword)) ||
-                            (column == "SucChua" && isNum && x.SucChua == v) ||
-                            (column == "DangO" && isNum && x.DangO == v) ||
-                            (column == "DonGia" && isNum && x.DonGia == v) ||
-                            (column == "DienTich" && decimal.TryParse(keyword, out var d) && x.DienTich == d)
+                            (column == "SucChua" && isInt && x.SucChua == vInt) ||
+                            (column == "DangO" && isInt && x.DangO == vInt) ||
+                            (column == "DonGia" && isInt && x.DonGia == vInt) ||
+                            (column == "DienTich" && isDec && x.DienTich == vDec)
                         );
                     }
 
@@ -83,6 +87,10 @@ namespace BUS
                         if (string.IsNullOrWhiteSpace(keyword) || column == "Tất cả")
                             return src;
 
+                        bool isThoiHan = int.TryParse(keyword, out var vThoiHan);
+                        // Nếu HocKi là int:
+                        bool isHocKi = int.TryParse(keyword, out var vHocKi);
+
                         return src.Where(x =>
                             (column == "MaPDK" && x.MaPDK.ToString().Contains(keyword)) ||
                             (column == "MSSV" && (x.MSSV ?? "").ToLower().Contains(keyword)) ||
@@ -91,11 +99,16 @@ namespace BUS
                             (column == "TenNV" && (x.TenNV ?? "").ToLower().Contains(keyword)) ||
                             (column == "Khu" && (x.Khu ?? "").ToLower().Contains(keyword)) ||
                             (column == "MaPhong" && (x.MaPhong ?? "").ToLower().Contains(keyword)) ||
-                            (column == "HocKi" && (x.HocKi ?? "").ToLower().Contains(keyword)) ||
+                            (column == "HocKi" && (x.HocKi.ToString().Contains(keyword) || (isHocKi && x.HocKi == vHocKi))) ||
                             (column == "NamHoc" && (x.NamHoc ?? "").ToLower().Contains(keyword)) ||
-                            (column == "NgayGioDK" && x.NgayGioDK.ToString("yyyy-MM-dd HH:mm:ss").Contains(keyword)) ||
-                            (column == "ThoiHan" && int.TryParse(keyword, out var v) && x.ThoiHan == v) ||
-                            (column == "NgayBD" && x.NgayBD.ToString("yyyy-MM-dd").Contains(keyword))
+                          (column == "NgayGioDK" &&
+    (x.NgayGioDK != null &&
+     string.Format("{0:yyyy-MM-dd HH:mm:ss}", x.NgayGioDK).Contains(keyword))) ||
+
+                            (column == "ThoiHan" && isThoiHan && x.ThoiHan == vThoiHan) ||
+                            (column == "NgayBD" &&
+    (x.NgayBD != null &&
+     string.Format("{0:yyyy-MM-dd}", x.NgayBD).Contains(keyword)))
                         );
                     }
 
@@ -104,6 +117,8 @@ namespace BUS
                         var src = LayDanhSachHoaDon();
                         if (string.IsNullOrWhiteSpace(keyword) || column == "Tất cả")
                             return src;
+
+                        bool isDec = decimal.TryParse(keyword, out var vTien);
 
                         return src.Where(x =>
                             (column == "MaHD" && x.MaHD.ToString().Contains(keyword)) ||
@@ -114,7 +129,7 @@ namespace BUS
                             (column == "MaPhong" && (x.MaPhong ?? "").ToLower().Contains(keyword)) ||
                             (column == "MaNV" && (x.MaNV ?? "").ToLower().Contains(keyword)) ||
                             (column == "TenNV" && (x.TenNV ?? "").ToLower().Contains(keyword)) ||
-                            (column == "TongTienDichVu" && decimal.TryParse(keyword, out var d) && x.TongTienDichVu == d)
+                            (column == "TongTienDichVu" && isDec && x.TongTienDichVu == vTien)
                         );
                     }
             }

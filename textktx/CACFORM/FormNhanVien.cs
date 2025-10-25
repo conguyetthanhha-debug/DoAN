@@ -10,7 +10,6 @@ namespace textktx.CACFORM
     {
         public partial class FormNhanVien : Form
         {
-        public event Action<NhanVienVm> NhanVienSelected;
         private readonly NhanVienBUS _bus = new NhanVienBUS();
             private byte[] _anhBytes;
 

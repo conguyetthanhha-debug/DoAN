@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnContainer = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -40,10 +41,8 @@
             this.txtQueQuan = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtMSSV = new System.Windows.Forms.TextBox();
-            this.cmbMaLop = new System.Windows.Forms.ComboBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.lbCMND = new System.Windows.Forms.Label();
-            this.txtNgSinh = new System.Windows.Forms.TextBox();
             this.lbHoTen = new System.Windows.Forms.Label();
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.lbGioiTinh = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@
             this.txtBHYT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
-            this.lbMaLop = new System.Windows.Forms.Label();
             this.lbBHYT = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbSDT = new System.Windows.Forms.Label();
@@ -79,6 +77,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -119,6 +118,7 @@
             // pnContainer
             // 
             this.pnContainer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnContainer.Controls.Add(this.dateTimePicker1);
             this.pnContainer.Controls.Add(this.label14);
             this.pnContainer.Controls.Add(this.label13);
             this.pnContainer.Controls.Add(this.checkBox1);
@@ -129,10 +129,8 @@
             this.pnContainer.Controls.Add(this.txtQueQuan);
             this.pnContainer.Controls.Add(this.label12);
             this.pnContainer.Controls.Add(this.txtMSSV);
-            this.pnContainer.Controls.Add(this.cmbMaLop);
             this.pnContainer.Controls.Add(this.txtCMND);
             this.pnContainer.Controls.Add(this.lbCMND);
-            this.pnContainer.Controls.Add(this.txtNgSinh);
             this.pnContainer.Controls.Add(this.lbHoTen);
             this.pnContainer.Controls.Add(this.lbNgaySinh);
             this.pnContainer.Controls.Add(this.lbGioiTinh);
@@ -140,7 +138,6 @@
             this.pnContainer.Controls.Add(this.txtBHYT);
             this.pnContainer.Controls.Add(this.txtEmail);
             this.pnContainer.Controls.Add(this.txtSDT);
-            this.pnContainer.Controls.Add(this.lbMaLop);
             this.pnContainer.Controls.Add(this.lbBHYT);
             this.pnContainer.Controls.Add(this.lbEmail);
             this.pnContainer.Controls.Add(this.lbSDT);
@@ -152,6 +149,13 @@
             this.pnContainer.Name = "pnContainer";
             this.pnContainer.Size = new System.Drawing.Size(975, 340);
             this.pnContainer.TabIndex = 31;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(134, 134);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePicker1.TabIndex = 66;
             // 
             // label14
             // 
@@ -196,12 +200,13 @@
             this.btnChonHinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChonHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnChonHinh.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnChonHinh.Location = new System.Drawing.Point(722, 255);
+            this.btnChonHinh.Location = new System.Drawing.Point(712, 255);
             this.btnChonHinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChonHinh.Name = "btnChonHinh";
-            this.btnChonHinh.Size = new System.Drawing.Size(133, 26);
+            this.btnChonHinh.Size = new System.Drawing.Size(143, 34);
             this.btnChonHinh.TabIndex = 41;
             this.btnChonHinh.Text = "Chọn hình...";
+            this.btnChonHinh.Click += new System.EventHandler(this.btnChonHinh_Click);
             // 
             // cmbDienSV
             // 
@@ -211,10 +216,10 @@
             "2",
             "2NT",
             "3"});
-            this.cmbDienSV.Location = new System.Drawing.Point(135, 237);
+            this.cmbDienSV.Location = new System.Drawing.Point(430, 234);
             this.cmbDienSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbDienSV.Name = "cmbDienSV";
-            this.cmbDienSV.Size = new System.Drawing.Size(185, 31);
+            this.cmbDienSV.Size = new System.Drawing.Size(205, 31);
             this.cmbDienSV.TabIndex = 42;
             // 
             // ckbNu
@@ -228,15 +233,15 @@
             // 
             // txtQueQuan
             // 
-            this.txtQueQuan.Location = new System.Drawing.Point(139, 286);
+            this.txtQueQuan.Location = new System.Drawing.Point(137, 235);
             this.txtQueQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(496, 30);
+            this.txtQueQuan.Size = new System.Drawing.Size(197, 30);
             this.txtQueQuan.TabIndex = 44;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(44, 289);
+            this.label12.Location = new System.Drawing.Point(44, 237);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(100, 25);
             this.label12.TabIndex = 45;
@@ -250,38 +255,21 @@
             this.txtMSSV.Size = new System.Drawing.Size(191, 30);
             this.txtMSSV.TabIndex = 46;
             // 
-            // cmbMaLop
-            // 
-            this.cmbMaLop.Location = new System.Drawing.Point(430, 234);
-            this.cmbMaLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbMaLop.Name = "cmbMaLop";
-            this.cmbMaLop.Size = new System.Drawing.Size(204, 31);
-            this.cmbMaLop.TabIndex = 47;
-            // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(430, 176);
+            this.txtCMND.Location = new System.Drawing.Point(430, 21);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(204, 30);
             this.txtCMND.TabIndex = 48;
-            this.txtCMND.TextChanged += new System.EventHandler(this.txtCMND_TextChanged);
             // 
             // lbCMND
             // 
-            this.lbCMND.Location = new System.Drawing.Point(348, 26);
+            this.lbCMND.Location = new System.Drawing.Point(354, 26);
             this.lbCMND.Name = "lbCMND";
             this.lbCMND.Size = new System.Drawing.Size(64, 18);
             this.lbCMND.TabIndex = 49;
-            this.lbCMND.Text = "CMND";
-            // 
-            // txtNgSinh
-            // 
-            this.txtNgSinh.Location = new System.Drawing.Point(130, 132);
-            this.txtNgSinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNgSinh.Name = "txtNgSinh";
-            this.txtNgSinh.Size = new System.Drawing.Size(191, 30);
-            this.txtNgSinh.TabIndex = 50;
+            this.lbCMND.Text = "CCCD";
             // 
             // lbHoTen
             // 
@@ -293,11 +281,12 @@
             // 
             // lbNgaySinh
             // 
-            this.lbNgaySinh.Location = new System.Drawing.Point(44, 140);
+            this.lbNgaySinh.Location = new System.Drawing.Point(28, 138);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(89, 18);
+            this.lbNgaySinh.Size = new System.Drawing.Size(100, 22);
             this.lbNgaySinh.TabIndex = 52;
             this.lbNgaySinh.Text = "Ngày sinh";
+            this.lbNgaySinh.Click += new System.EventHandler(this.lbNgaySinh_Click);
             // 
             // lbGioiTinh
             // 
@@ -317,16 +306,15 @@
             // 
             // txtBHYT
             // 
-            this.txtBHYT.Location = new System.Drawing.Point(430, 126);
+            this.txtBHYT.Location = new System.Drawing.Point(430, 175);
             this.txtBHYT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBHYT.Name = "txtBHYT";
             this.txtBHYT.Size = new System.Drawing.Size(204, 30);
             this.txtBHYT.TabIndex = 55;
-            this.txtBHYT.TextChanged += new System.EventHandler(this.txtBHYT_TextChanged);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(430, 81);
+            this.txtEmail.Location = new System.Drawing.Point(431, 116);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 30);
@@ -334,20 +322,11 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(430, 26);
+            this.txtSDT.Location = new System.Drawing.Point(431, 65);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(204, 30);
             this.txtSDT.TabIndex = 57;
-            this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
-            // 
-            // lbMaLop
-            // 
-            this.lbMaLop.Location = new System.Drawing.Point(44, 241);
-            this.lbMaLop.Name = "lbMaLop";
-            this.lbMaLop.Size = new System.Drawing.Size(89, 18);
-            this.lbMaLop.TabIndex = 58;
-            this.lbMaLop.Text = "Mã lớp";
             // 
             // lbBHYT
             // 
@@ -367,7 +346,7 @@
             // 
             // lbSDT
             // 
-            this.lbSDT.Location = new System.Drawing.Point(348, 73);
+            this.lbSDT.Location = new System.Drawing.Point(354, 67);
             this.lbSDT.Name = "lbSDT";
             this.lbSDT.Size = new System.Drawing.Size(89, 18);
             this.lbSDT.TabIndex = 61;
@@ -555,7 +534,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, -37);
+            this.label1.Location = new System.Drawing.Point(11, -57);
             this.label1.MinimumSize = new System.Drawing.Size(965, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(965, 62);
@@ -569,7 +548,7 @@
             this.lbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(187)))), ((int)(((byte)(238)))));
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.lbTitle.ForeColor = System.Drawing.Color.Black;
-            this.lbTitle.Location = new System.Drawing.Point(4, 0);
+            this.lbTitle.Location = new System.Drawing.Point(4, -20);
             this.lbTitle.MinimumSize = new System.Drawing.Size(965, 62);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(965, 62);
@@ -580,14 +559,29 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 409);
+            this.panel2.Location = new System.Drawing.Point(0, 368);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(969, 50);
+            this.panel2.Size = new System.Drawing.Size(969, 51);
             this.panel2.TabIndex = 32;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(566, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 34);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Check";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSua
             // 
@@ -615,12 +609,13 @@
             this.btnLuu.TabIndex = 26;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // FormSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 459);
+            this.ClientSize = new System.Drawing.Size(969, 419);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.label1);
@@ -671,10 +666,8 @@
         private System.Windows.Forms.TextBox txtQueQuan;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtMSSV;
-        private System.Windows.Forms.ComboBox cmbMaLop;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.Label lbCMND;
-        private System.Windows.Forms.TextBox txtNgSinh;
         private System.Windows.Forms.Label lbHoTen;
         private System.Windows.Forms.Label lbNgaySinh;
         private System.Windows.Forms.Label lbGioiTinh;
@@ -682,7 +675,6 @@
         private System.Windows.Forms.TextBox txtBHYT;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.Label lbMaLop;
         private System.Windows.Forms.Label lbBHYT;
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Label lbSDT;
@@ -693,5 +685,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

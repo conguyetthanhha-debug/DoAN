@@ -19,8 +19,7 @@ namespace DAL.Model
         [StringLength(20)]
         public string MSSV { get; set; }
 
-        [StringLength(20)]
-        public string MaLop { get; set; }
+
 
         [StringLength(30)]
         public string DienSV { get; set; }

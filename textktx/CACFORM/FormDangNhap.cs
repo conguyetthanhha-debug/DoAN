@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DAL.Model;
+ // lớp chứa AppSession
 
 namespace textktx.CACFORM
 {
@@ -19,22 +13,27 @@ namespace textktx.CACFORM
             InitializeComponent();
         }
 
-       
         private void button1_Click(object sender, EventArgs e)
         {
-            var usernameData = textBox1.Text;
-            var passwordData = textBox2.Text;
-            DangNhapBUS login = new DangNhapBUS();
-            if(login.DangNhap(usernameData, passwordData))
+            var usernameData = textBox1.Text?.Trim();
+            var passwordData = textBox2.Text?.Trim();
+
+            var login = new DangNhapBUS();
+
+            if (login.DangNhap(usernameData, passwordData, out var maNV))
             {
-                FormMain frmMain = new FormMain();
+                // Lưu session (để các form khác như InDangKy dùng MaNV)
+                AppSession.TenDN = usernameData;
+                AppSession.MaNV = maNV;
+
+                var frmMain = new FormMain();
                 frmMain.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi đăng nhập",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -52,7 +51,6 @@ namespace textktx.CACFORM
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-
         }
     }
 }

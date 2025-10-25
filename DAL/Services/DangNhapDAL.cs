@@ -1,9 +1,5 @@
-﻿using DAL.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using DAL.Model;
 
 namespace DAL.Services
 {
@@ -22,7 +18,17 @@ namespace DAL.Services
                 );
             }
         }
-        
 
+        public string GetMaNVByUsername(string username)
+        {
+            if (string.IsNullOrWhiteSpace(username)) return null;
+            using (var db = new Model1())
+            {
+                return db.DANGNHAPs
+                         .Where(x => x.TenDN == username.Trim())
+                         .Select(x => x.MaNV)
+                         .FirstOrDefault();
+            }
+        }
     }
 }
