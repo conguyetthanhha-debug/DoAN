@@ -5,13 +5,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+
 
 namespace textktx.CACFORM
 {
     public partial class FormHoaDon : Form
     {
-        private bool _isViewMode = false;
 
+        private List<HoaDonChiTietVm> _ctHienTai = new List<HoaDonChiTietVm>();
+
+        private bool _isViewMode = false;
+        private bool _hasAddedDV = false;
         private readonly PhongBUS _phongBus = new PhongBUS();
         private readonly DichVuBUS _dvBus = new DichVuBUS();
         private readonly HoaDonBUS _hdBus = new HoaDonBUS();
@@ -51,6 +59,10 @@ namespace textktx.CACFORM
             txtNamHoc.Text = DateTime.Now.Year.ToString();
             SetupHoaDonGridColumns();
             SetViewMode(false);
+            button1.Visible = true;       
+            btnThemDV.Visible = true;    
+            btnHoanTat.Visible = false;  
+
         }
 
         private void SetupHoaDonGridColumns()
@@ -66,6 +78,11 @@ namespace textktx.CACFORM
             dgvHoaDon.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "MaPhong", HeaderText = "Phòng" });
             dgvHoaDon.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "MaNV", HeaderText = "Mã NV" });
             dgvHoaDon.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "TenNV", HeaderText = "Tên NV" });
+            dgvHoaDon.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "QRCodeUpdatedAt",
+                HeaderText = "Ngày thêm QR"
+            });
             dgvHoaDon.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "TongTienDichVu", HeaderText = "Tổng DV" });
         }
 
@@ -144,11 +161,30 @@ namespace textktx.CACFORM
 
         private void cmbTenDV_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateDonViTinhBySelected();
+            // Đang ở chế độ xem: nguồn dữ liệu là HoaDonChiTietVm
+            if (_isViewMode && cmbTenDV.SelectedItem is HoaDonChiTietVm ct)
+            {
+                lbDonVi.Text = "Đơn vị tính: " + (ct.DonViTinh ?? "");
+                try { numSoLuong.Value = Math.Max(1, ct.SoLuong); } catch { }
+                return;
+            }
+
+            // Đang ở chế độ tạo: nguồn dữ liệu là DichVuVm (danh mục tổng)
+            if (cmbTenDV.SelectedItem is DichVuVm dv)
+            {
+                lbDonVi.Text = "Đơn vị tính: " + (dv.DonViTinh ?? "");
+            }
+            else
+            {
+                lbDonVi.Text = "Đơn vị tính:";
+            }
         }
 
         private void btnThemDV_Click_1(object sender, EventArgs e)
         {
+            _hasAddedDV = true;
+            btnHoanTat.Visible = true;
+
             if (_isViewMode)
             {
                 MessageBox.Show("Đang ở chế độ xem. Không thể thêm dịch vụ.", "Thông báo",
@@ -216,20 +252,41 @@ namespace textktx.CACFORM
                 if (conf != DialogResult.Yes) return;
             }
 
+            // 🔹 Gọi BUS để tạo hóa đơn 1 lần duy nhất
             if (_hdBus.TaoHoaDon(maNV, khu, phong, thang, nam, ngay, dsTam, out var maHD, out var error))
             {
-                MessageBox.Show($"Đã tạo hóa đơn #{maHD}.", "Thành công",
+                // ✅ Nếu có QR → lưu vào DB
+                if (pictureBox1.Image != null)
+                {
+                    try
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            pictureBox1.Image.Save(ms, ImageFormat.Png);
+                            var qrBytes = ms.ToArray();
+                            _hdBus.CapNhatQRCode(maHD, qrBytes, out var qrErr);
+
+                            if (!string.IsNullOrEmpty(qrErr))
+                                MessageBox.Show("⚠️ Cảnh báo: Lưu QR thất bại\n" + qrErr);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi khi lưu QR: " + ex.Message);
+                    }
+                }
+
+                MessageBox.Show($"✅ Đã tạo hóa đơn #{maHD}.", "Thành công",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 _tempDichVu.Clear();
                 LoadHoaDonGrid();
-
                 BindHoaDonLenControls(maHD);
                 SetViewMode(true);
             }
             else
             {
-                MessageBox.Show("Lỗi tạo hóa đơn: " + error, "Thất bại",
+                MessageBox.Show("❌ Lỗi tạo hóa đơn: " + error, "Thất bại",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -256,6 +313,13 @@ namespace textktx.CACFORM
             if (list == null || e.RowIndex >= list.Count) return;
 
             var item = list[e.RowIndex];
+
+            // Ẩn nút khi xem
+            button1.Visible = false;
+            btnThemDV.Visible = false;
+            btnHoanTat.Visible = false;
+
+            // Bind ô trên form
             txtMaNV.Text = item.MaNV;
             dtNgayHD.Value = item.NgayHD;
             txtThang.SelectedItem = item.Thang.ToString();
@@ -263,15 +327,115 @@ namespace textktx.CACFORM
             cmbKhu.SelectedItem = item.Khu;
             LoadPhongTheoKhu();
             cmbPhong.SelectedItem = item.MaPhong;
+
+            // >>> Bind dịch vụ của HĐ lên combobox + số lượng/đơn vị tính
+            BindChiTietHoaDonLenDvControls(item.MaHD);
+
+            // Chế độ xem
             SetViewMode(true);
+
+            // QR
+            if (item.QRCode != null && item.QRCode.Length > 0)
+            {
+                using (var ms = new MemoryStream(item.QRCode))
+                    pictureBox1.Image = Image.FromStream(ms);
+            }
+            else pictureBox1.Image = null;
         }
+
+
 
         private void dgvHoaDon_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0) return;
+
             SetViewMode(false);
             _tempDichVu.Clear();
+
             txtMaNV.Text = AppSession.MaNV ?? "";
             dtNgayHD.Value = DateTime.Now;
+
+            // Về danh mục DV gốc để thêm mới
+            BindDanhMucDichVu();
+
+            pictureBox1.Image = null;
+
+            // Hiện nút khi tạo mới
+            button1.Visible = true;
+            button1.Text = "Tạo QR";    // đảm bảo có chữ
+            btnThemDV.Visible = true;
+            btnHoanTat.Visible = _tempDichVu.Any();
+
+            dgvHoaDon.ClearSelection();
+        }
+
+        // Bind CHI TIẾT của 1 hóa đơn lên combobox dịch vụ (chế độ xem)
+        private void BindChiTietHoaDonLenDvControls(int maHD)
+        {
+            _ctHienTai = _hdBus.LayChiTiet(maHD) ?? new List<HoaDonChiTietVm>();
+
+            cmbTenDV.DataSource = null;
+            cmbTenDV.DisplayMember = "TenDV";
+            cmbTenDV.ValueMember = "MaDV";
+            cmbTenDV.DataSource = _ctHienTai;
+
+            if (_ctHienTai.Count > 0)
+            {
+                var first = _ctHienTai[0];
+                try { numSoLuong.Value = Math.Max(1, first.SoLuong); } catch { }
+                lbDonVi.Text = "Đơn vị tính: " + (first.DonViTinh ?? "");
+            }
+            else
+            {
+                try { numSoLuong.Value = 1; } catch { }
+                lbDonVi.Text = "Đơn vị tính:";
+            }
+        }
+
+        // Bind danh mục dịch vụ gốc (chế độ tạo mới)
+        private void BindDanhMucDichVu()
+        {
+            cmbTenDV.DataSource = null;
+            cmbTenDV.DisplayMember = "TenDV";
+            cmbTenDV.ValueMember = "MaDV";
+            cmbTenDV.DataSource = _dsDichVu;
+
+            UpdateDonViTinhBySelected();
+            try { numSoLuong.Value = 1; } catch { }
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_isViewMode)
+                {
+                    MessageBox.Show("Đang ở chế độ xem, không thể tạo QR.", "Thông báo");
+                    return;
+                }
+
+                var maNV = txtMaNV.Text;
+                var khu = cmbKhu.SelectedItem?.ToString();
+                var phong = cmbPhong.SelectedItem?.ToString();
+                var thang = txtThang.SelectedItem?.ToString();
+                var nam = txtNamHoc.Text;
+                var ngay = dtNgayHD.Value.ToString("yyyyMMddHHmmss");
+
+                string qrText = $"HOADON|{maNV}|{khu}|{phong}|{thang}|{nam}|{ngay}";
+
+                var generator = new QRCoder.QRCodeGenerator();
+                var data = generator.CreateQrCode(qrText, QRCoder.QRCodeGenerator.ECCLevel.Q);
+                var qrCode = new QRCoder.QRCode(data);
+                var bmp = qrCode.GetGraphic(10);
+
+                pictureBox1.Image?.Dispose();
+                pictureBox1.Image = bmp;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tạo QR: " + ex.Message);
+            }
         }
     }
 }

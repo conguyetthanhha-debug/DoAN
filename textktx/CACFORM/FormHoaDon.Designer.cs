@@ -41,6 +41,8 @@
             this.lbPhong = new System.Windows.Forms.Label();
             this.lbKhu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnTop.SuspendLayout();
             this.pnContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
@@ -48,6 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.pnContainerBottom.SuspendLayout();
             this.pnContainerTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
@@ -88,20 +91,20 @@
             this.dgvHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHoaDon.ColumnHeadersHeight = 34;
             this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHoaDon.Location = new System.Drawing.Point(0, 257);
+            this.dgvHoaDon.Location = new System.Drawing.Point(0, 299);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidth = 62;
-            this.dgvHoaDon.Size = new System.Drawing.Size(976, 379);
+            this.dgvHoaDon.Size = new System.Drawing.Size(976, 337);
             this.dgvHoaDon.TabIndex = 0;
-            // Sự kiện Grid (xem/thoát xem)
             this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellClick);
             this.dgvHoaDon.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellDoubleClick);
             // 
-            // panel1 (khối thêm dịch vụ)
+            // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lbDonVi);
-            this.panel1.Controls.Add(this.btnThemDV);
             this.panel1.Controls.Add(this.numSoLuong);
             this.panel1.Controls.Add(this.cmbTenDV);
             this.panel1.Controls.Add(this.lbSoLuong);
@@ -110,13 +113,13 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.panel1.Location = new System.Drawing.Point(0, 139);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(976, 118);
+            this.panel1.Size = new System.Drawing.Size(976, 160);
             this.panel1.TabIndex = 1;
             // 
             // lbDonVi
             // 
             this.lbDonVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbDonVi.Location = new System.Drawing.Point(560, 92);
+            this.lbDonVi.Location = new System.Drawing.Point(466, 122);
             this.lbDonVi.Name = "lbDonVi";
             this.lbDonVi.Size = new System.Drawing.Size(220, 26);
             this.lbDonVi.TabIndex = 0;
@@ -127,42 +130,49 @@
             this.btnThemDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnThemDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnThemDV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThemDV.Location = new System.Drawing.Point(790, 44);
+            this.btnThemDV.Location = new System.Drawing.Point(865, 6);
             this.btnThemDV.Name = "btnThemDV";
-            this.btnThemDV.Size = new System.Drawing.Size(108, 43);
+            this.btnThemDV.Size = new System.Drawing.Size(108, 49);
             this.btnThemDV.TabIndex = 2;
             this.btnThemDV.Text = "Thêm";
             this.btnThemDV.UseVisualStyleBackColor = false;
-            // Sự kiện Thêm
             this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click_1);
             // 
             // numSoLuong
             // 
-            this.numSoLuong.Location = new System.Drawing.Point(230, 62);
+            this.numSoLuong.Location = new System.Drawing.Point(177, 82);
             this.numSoLuong.Maximum = new decimal(new int[] {
-            10000, 0, 0, 0});
+            10000,
+            0,
+            0,
+            0});
             this.numSoLuong.Minimum = new decimal(new int[] {
-            1, 0, 0, 0});
+            1,
+            0,
+            0,
+            0});
             this.numSoLuong.Name = "numSoLuong";
             this.numSoLuong.Size = new System.Drawing.Size(430, 25);
             this.numSoLuong.TabIndex = 3;
             this.numSoLuong.Value = new decimal(new int[] {
-            1, 0, 0, 0});
+            1,
+            0,
+            0,
+            0});
             // 
             // cmbTenDV
             // 
             this.cmbTenDV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTenDV.Location = new System.Drawing.Point(230, 18);
+            this.cmbTenDV.Location = new System.Drawing.Point(177, 28);
             this.cmbTenDV.Name = "cmbTenDV";
             this.cmbTenDV.Size = new System.Drawing.Size(430, 25);
             this.cmbTenDV.TabIndex = 4;
-            // Sự kiện đổi dịch vụ -> cập nhật đơn vị tính
             this.cmbTenDV.SelectedIndexChanged += new System.EventHandler(this.cmbTenDV_SelectedIndexChanged);
             // 
             // lbSoLuong
             // 
             this.lbSoLuong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lbSoLuong.Location = new System.Drawing.Point(124, 57);
+            this.lbSoLuong.Location = new System.Drawing.Point(71, 77);
             this.lbSoLuong.Name = "lbSoLuong";
             this.lbSoLuong.Size = new System.Drawing.Size(121, 34);
             this.lbSoLuong.TabIndex = 5;
@@ -171,7 +181,7 @@
             // lbTenDV
             // 
             this.lbTenDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lbTenDV.Location = new System.Drawing.Point(124, 15);
+            this.lbTenDV.Location = new System.Drawing.Point(71, 25);
             this.lbTenDV.Name = "lbTenDV";
             this.lbTenDV.Size = new System.Drawing.Size(100, 32);
             this.lbTenDV.TabIndex = 6;
@@ -180,6 +190,7 @@
             // pnContainerBottom
             // 
             this.pnContainerBottom.Controls.Add(this.btnHoanTat);
+            this.pnContainerBottom.Controls.Add(this.btnThemDV);
             this.pnContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnContainerBottom.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.pnContainerBottom.Location = new System.Drawing.Point(0, 636);
@@ -190,13 +201,12 @@
             // btnHoanTat
             // 
             this.btnHoanTat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnHoanTat.Location = new System.Drawing.Point(419, 9);
+            this.btnHoanTat.Location = new System.Drawing.Point(0, 6);
             this.btnHoanTat.Name = "btnHoanTat";
-            this.btnHoanTat.Size = new System.Drawing.Size(127, 56);
+            this.btnHoanTat.Size = new System.Drawing.Size(127, 49);
             this.btnHoanTat.TabIndex = 1;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = false;
-            // Sự kiện Hoàn tất
             this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // pnContainerTop
@@ -224,7 +234,18 @@
             // 
             this.txtThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtThang.Items.AddRange(new object[] {
-            "1","2","3","4","5","6","7","8","9","10","11","12"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.txtThang.Location = new System.Drawing.Point(402, 31);
             this.txtThang.Name = "txtThang";
             this.txtThang.Size = new System.Drawing.Size(192, 31);
@@ -291,7 +312,6 @@
             this.cmbKhu.Name = "cmbKhu";
             this.cmbKhu.Size = new System.Drawing.Size(182, 31);
             this.cmbKhu.TabIndex = 8;
-            // Sự kiện đổi Khu -> tải Phòng
             this.cmbKhu.SelectedIndexChanged += new System.EventHandler(this.cmbKhu_SelectedIndexChanged);
             // 
             // lbPhong
@@ -318,9 +338,29 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Tháng:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(716, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(875, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 49);
+            this.button1.TabIndex = 8;
+            this.button1.Text = " ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(976, 746);
             this.Controls.Add(this.pnContainer);
@@ -337,7 +377,9 @@
             this.pnContainerBottom.ResumeLayout(false);
             this.pnContainerTop.ResumeLayout(false);
             this.pnContainerTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -368,5 +410,7 @@
         private System.Windows.Forms.Label lbNgay;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

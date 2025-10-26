@@ -19,3 +19,5 @@ D:\c#\DoAN\BUS\obj\Debug\BUS.pdb
 D:\c#\DoAN\BUS\bin\Debug\EntityFramework.dll
 D:\c#\DoAN\BUS\bin\Debug\DAL.dll.config
 D:\c#\DoAN\BUS\bin\Debug\EntityFramework.xml
+D:\c#\DoAN\BUS\bin\Debug\QRCoder.dll
+D:\c#\DoAN\BUS\bin\Debug\QRCoder.xml

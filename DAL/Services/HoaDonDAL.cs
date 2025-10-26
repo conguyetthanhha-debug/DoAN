@@ -8,6 +8,7 @@ namespace DAL.Services
 {
     public class HoaDonDAL
     {
+        // DAL/Services/HoaDonDAL.cs
         public List<HoaDonVm> GetAll()
         {
             using (var db = new Model1())
@@ -30,7 +31,11 @@ namespace DAL.Services
                                                 dv => dv.MaDV,
                                                 (sd, dv) => (decimal)sd.SoLuong * (decimal)dv.GiaDV)
                                           .DefaultIfEmpty(0m)
-                                          .Sum()
+                                          .Sum(),
+                        // 👇 THÊM DÒNG NÀY
+                        QRCode = hd.QRCode,
+                        QRCodeUpdatedAt = hd.QRCodeUpdatedAt
+                        // (Không cần kéo QRCode byte[] lên lưới để tránh nặng)
                     };
 
                 return q.OrderByDescending(x => x.Nam)
@@ -40,6 +45,7 @@ namespace DAL.Services
                         .ToList();
             }
         }
+
 
         public int InsertHoaDon(short nam, byte thang, DateTime ngayHD, string khu, string maPhong, string maNV)
         {
@@ -100,5 +106,48 @@ namespace DAL.Services
                 return q.AsNoTracking().ToList();
             }
         }
+
+        public bool UpdateQRCode(int maHD, byte[] qrBytes, out string error)
+        {
+            error = null;
+            try
+            {
+                using (var db = new Model1())
+                {
+                    var hd = db.HOADONs.SingleOrDefault(x => x.MaHD == maHD);
+                    if (hd == null) { error = "Không tìm thấy hóa đơn."; return false; }
+
+                    // ✅ Cập nhật QR code và ngày tạo/cập nhật QR
+                    hd.QRCode = qrBytes;
+                    hd.QRCodeUpdatedAt = DateTime.Now;
+
+                    db.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                error = ex.GetBaseException()?.Message ?? ex.Message;
+                return false;
+            }
+        }
+
+        public void UpdateQRCode(int maHD, byte[] qrImage)
+        {
+            using (var db = new Model1())
+            {
+                var hoaDon = db.HOADONs.Find(maHD);
+                if (hoaDon != null)
+                {
+                    hoaDon.QRCode = qrImage;
+                    hoaDon.QRCodeUpdatedAt = DateTime.Now; // ✅ Cập nhật ngày giờ tạo/cập nhật QR
+                    db.SaveChanges();
+                }
+            }
+        }
+
+
+
+
     }
 }

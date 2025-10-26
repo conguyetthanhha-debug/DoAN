@@ -79,6 +79,10 @@ namespace DAL.Services
         public string MaNV { get; set; }
         public string TenNV { get; set; }
         public decimal TongTienDichVu { get; set; }
+
+        public byte[] QRCode { get; set; }
+
+        public DateTime? QRCodeUpdatedAt { get; set; }
     }
 
     public class HoaDonChiTietVm

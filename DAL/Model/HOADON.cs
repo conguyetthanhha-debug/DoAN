@@ -1,4 +1,4 @@
-namespace DAL.Model
+﻿namespace DAL.Model
 {
     using System;
     using System.Collections.Generic;
@@ -37,6 +37,19 @@ namespace DAL.Model
         [StringLength(10)]
         public string Khu { get; set; }
 
+        // ==== THUỘC TÍNH MỚI CHO QR CODE ====
+        /// <summary>
+        /// Ảnh mã QR của hóa đơn (được lưu dạng nhị phân)
+        /// </summary>
+        [Column(TypeName = "varbinary(max)")]
+        public byte[] QRCode { get; set; }
+
+        /// <summary>
+        /// Thời gian QR code được tạo hoặc cập nhật
+        /// </summary>
+        public DateTime? QRCodeUpdatedAt { get; set; }
+
+        // ==== KHÓA NGOẠI & QUAN HỆ ====
         public virtual NHANVIEN NHANVIEN { get; set; }
 
         public virtual PHONG PHONG { get; set; }

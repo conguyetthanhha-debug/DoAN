@@ -52,3 +52,5 @@ D:\c#\DoAN\textktx\bin\Debug\EntityFramework.SqlServer.xml
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormkhuPhong.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormCacTheLoaiPhong.resources
 D:\c#\DoAN\textktx\obj\Debug\textktx.CACFORM.FormCacLoaiDichVu.resources
+D:\c#\DoAN\textktx\bin\Debug\QRCoder.dll
+D:\c#\DoAN\textktx\bin\Debug\QRCoder.xml

@@ -7,12 +7,6 @@ using DAL.Model;
 namespace DAL.Services
 {
     
-
-
-    
-
-    
-
     public class TimKiemDAL
     {
         public List<SinhVienVm> GetSinhVien()
@@ -93,8 +87,8 @@ namespace DAL.Services
             using (var db = new Model1())
             {
                 var q =
-                    from hd in db.HOADONs.Include(h => h.NHANVIEN)
-                    join sd in db.SDDVs on hd.MaHD equals sd.MaHD into g
+                    from hd in db.HOADONs
+                    join nv in db.NHANVIENs on hd.MaNV equals nv.MaNV
                     select new HoaDonVm
                     {
                         MaHD = hd.MaHD,
@@ -104,18 +98,20 @@ namespace DAL.Services
                         Khu = hd.Khu,
                         MaPhong = hd.MaPhong,
                         MaNV = hd.MaNV,
-                        TenNV = hd.NHANVIEN.HoTen,
-                        TongTienDichVu = g
-                            .Join(db.DICHVUs, s => s.MaDV, dv => dv.MaDV, (s, dv) => (decimal)(s.SoLuong * dv.GiaDV))
-                            .DefaultIfEmpty(0m)
-                            .Sum()
+                        TenNV = nv.HoTen,
+                        TongTienDichVu = (
+                            from sddv in db.SDDVs
+                            join dv in db.DICHVUs on sddv.MaDV equals dv.MaDV
+                            where sddv.MaHD == hd.MaHD
+                            select (decimal)sddv.SoLuong * (decimal)dv.GiaDV
+                        ).DefaultIfEmpty(0).Sum(),
+
+                        // ✅ Thêm 2 dòng này:
+                        QRCode = hd.QRCode,
+                        QRCodeUpdatedAt = hd.QRCodeUpdatedAt
                     };
 
-                return q.OrderByDescending(x => x.Nam)
-                        .ThenByDescending(x => x.Thang)
-                        .ThenByDescending(x => x.MaHD)
-                        .AsNoTracking()
-                        .ToList();
+                return q.AsNoTracking().ToList();
             }
         }
 

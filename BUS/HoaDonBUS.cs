@@ -47,5 +47,22 @@ namespace BUS
         }
 
         public List<HoaDonChiTietVm> LayChiTiet(int maHD) => dal.GetChiTietByMaHD(maHD);
+
+        public void CapNhatQRCode(int maHD, byte[] qrImage, out string error)
+        {
+            error = null;
+            try
+            {
+                var dal = new HoaDonDAL();
+                dal.UpdateQRCode(maHD, qrImage);
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+        }
+
+
+
     }
 }

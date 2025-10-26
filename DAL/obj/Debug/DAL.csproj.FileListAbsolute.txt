@@ -16,3 +16,5 @@ D:\c#\DoAN\DAL\bin\Debug\EntityFramework.SqlServer.dll
 D:\c#\DoAN\DAL\bin\Debug\EntityFramework.xml
 D:\c#\DoAN\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\c#\DoAN\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\c#\DoAN\DAL\bin\Debug\QRCoder.dll
+D:\c#\DoAN\DAL\bin\Debug\QRCoder.xml

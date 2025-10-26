@@ -288,6 +288,7 @@
             this.dgv.RowHeadersWidth = 62;
             this.dgv.Size = new System.Drawing.Size(1419, 628);
             this.dgv.TabIndex = 10;
+    
             // 
             // FormTimkiem
             // 

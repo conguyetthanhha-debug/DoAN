@@ -1,5 +1,4 @@
-﻿
-using BUS;
+﻿using BUS;
 using DAL.Services;
 using System;
 using System.Collections.Generic;
@@ -13,21 +12,18 @@ namespace textktx.CACFORM
         private readonly bool timKiemNhanVien;
         private readonly TimKiemBUS _svc;
         private TableKind _current = TableKind.None;
+
         public event Action<NhanVienVm> NhanVienSelected;
         public event Action<DAL.Services.SinhVienVm> SinhVienSelected;
 
         public FormTimkiem(bool tknv = false)
         {
-
             InitializeComponent();
             timKiemNhanVien = tknv;
             _svc = new TimKiemBUS();
             this.Shown += FormTimkiem_Shown;
 
-           
-            dgv.CellDoubleClick += dgv_CellDoubleClick;  
-            // Nếu muốn 1 click thì mở thêm dòng dưới:
-            // dgv.CellClick += dgv_CellClick;
+            dgv.CellDoubleClick += dgv_CellDoubleClick;
         }
 
         private static readonly string[] COL_SV = { "Tất cả", "MSSV", "HoTen", "GioiTinh", "NgSinh", "CMND", "Email", "SDT", "QueQuan" };
@@ -42,17 +38,14 @@ namespace textktx.CACFORM
                 BeginInvoke(new Action(() => SetCurrent(TableKind.NhanVien)));
         }
 
-        public void ShowSinhVien()
-        {
-            
-            btnSinhVien_Click(this, EventArgs.Empty);
-        }
+        public void ShowSinhVien() => btnSinhVien_Click(this, EventArgs.Empty);
+
         private void SetCurrent(TableKind kind)
         {
             _current = kind;
             pnKey.Visible = true;
             btnSearch.Enabled = true;
-            txtKhu.Clear(); 
+            txtKhu.Clear();
 
             switch (kind)
             {
@@ -86,10 +79,8 @@ namespace textktx.CACFORM
         private void DoSearch()
         {
             if (_current == TableKind.None) return;
-
             var col = (cmbMucTimKiem.SelectedItem as string) ?? "Tất cả";
             var text = (txtKhu.Text ?? "").Trim();
-
             var data = _svc.TimKiem(_current, col, text);
             BindGrid(data);
         }
@@ -100,9 +91,6 @@ namespace textktx.CACFORM
         private void btnPhieuDK_Click(object sender, EventArgs e) => SetCurrent(TableKind.PhieuDK);
         private void btnHoaDon_Click(object sender, EventArgs e) => SetCurrent(TableKind.HoaDon);
 
-    
-
-  
         private void BindGrid<T>(IEnumerable<T> data)
         {
             dgv.DataSource = null;
@@ -117,15 +105,90 @@ namespace textktx.CACFORM
             dgv.RowHeadersVisible = false;
             dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // Ẩn cột QRCodeUpdatedAt nếu có
+            if (dgv.Columns.Contains("QRCodeUpdatedAt"))
+                dgv.Columns["QRCodeUpdatedAt"].Visible = false;
+            if (dgv.Columns.Contains("QRCode"))
+                dgv.Columns["QRCode"].Visible = false;
         }
 
-        private void btnSearch_Click_1(object sender, EventArgs e)
-        {
-            DoSearch(); 
-        }
+        private void btnSearch_Click_1(object sender, EventArgs e) => DoSearch();
 
+        // 👉 Xử lý double-click
         private void dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-           => PickCurrentRow(e.RowIndex);
+        {
+            if (e.RowIndex < 0) return;
+
+            // Nếu là nhân viên hoặc sinh viên → chọn rồi thoát
+            if (_current == TableKind.NhanVien || _current == TableKind.SinhVien)
+            {
+                PickCurrentRow(e.RowIndex);
+                return;
+            }
+
+            // Chỉ xử lý khi đang ở tab Hóa đơn
+            if (_current != TableKind.HoaDon) return;
+
+            var vm = dgv.Rows[e.RowIndex].DataBoundItem as HoaDonVm;
+            if (vm == null) return;
+
+            if (vm.QRCode != null && vm.QRCode.Length > 0)
+                ShowQrModal(vm.QRCode, vm.QRCodeUpdatedAt);
+            else
+                MessageBox.Show("Hóa đơn này chưa có mã QR.", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // 👉 Popup hiển thị QR
+        private void ShowQrModal(byte[] qrBytes, DateTime? updatedAt)
+        {
+            System.Drawing.Image img;
+            using (var ms = new System.IO.MemoryStream(qrBytes))
+            using (var tmp = System.Drawing.Image.FromStream(ms))
+            {
+                img = new System.Drawing.Bitmap(tmp);
+            }
+
+            var frm = new Form
+            {
+                Text = updatedAt.HasValue
+                    ? $"QR Code (cập nhật: {updatedAt:dd/MM/yyyy HH:mm})"
+                    : "QR Code",
+                StartPosition = FormStartPosition.CenterParent,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false,
+                ShowInTaskbar = false,
+                ClientSize = new System.Drawing.Size(260, 300)
+            };
+
+            var pb = new PictureBox
+            {
+                Dock = DockStyle.Top,
+                Height = 240,
+                SizeMode = PictureBoxSizeMode.Zoom,
+                Image = img
+            };
+
+            var btnClose = new Button
+            {
+                Text = "Đóng",
+                Dock = DockStyle.Bottom,
+                Height = 36
+            };
+            btnClose.Click += (s, e) => frm.Close();
+
+            frm.Controls.Add(btnClose);
+            frm.Controls.Add(pb);
+
+            using (frm)
+            {
+                frm.ShowDialog(this);
+                pb.Image?.Dispose();
+            }
+        }
+
         private void PickCurrentRow(int rowIndex)
         {
             if (rowIndex < 0) return;
@@ -135,7 +198,6 @@ namespace textktx.CACFORM
                 var vm = dgv.Rows[rowIndex].DataBoundItem as NhanVienVm;
                 if (vm == null) return;
                 NhanVienSelected?.Invoke(vm);
-                Close();
                 return;
             }
 
@@ -144,7 +206,6 @@ namespace textktx.CACFORM
                 var svm = dgv.Rows[rowIndex].DataBoundItem as DAL.Services.SinhVienVm;
                 if (svm == null) return;
                 SinhVienSelected?.Invoke(svm);
-                Close();
                 return;
             }
         }
