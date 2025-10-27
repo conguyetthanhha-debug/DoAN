@@ -93,7 +93,7 @@ namespace textktx.CACFORM
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            var f = new FormTimkiem(tknv: true);
+            var f = new FormTimkiem(initialTab: TableKind.NhanVien, closeOnPick: true);
             f.NhanVienSelected += OnNhanVienPicked;
             f.Show(this);
         }

@@ -9,20 +9,26 @@ namespace textktx.CACFORM
 {
     public partial class FormTimkiem : Form
     {
-        private readonly bool timKiemNhanVien;
         private readonly TimKiemBUS _svc;
+        private readonly TableKind _initialTab;
         private TableKind _current = TableKind.None;
+        private readonly bool _closeOnPick;
 
         public event Action<NhanVienVm> NhanVienSelected;
         public event Action<DAL.Services.SinhVienVm> SinhVienSelected;
 
-        public FormTimkiem(bool tknv = false)
+        public FormTimkiem(TableKind initialTab = TableKind.None, bool closeOnPick = true)
         {
             InitializeComponent();
-            timKiemNhanVien = tknv;
             _svc = new TimKiemBUS();
-            this.Shown += FormTimkiem_Shown;
+            _initialTab = initialTab;
+            _closeOnPick = closeOnPick;
 
+            this.Shown += (s, e) =>
+            {
+                if (_initialTab != TableKind.None)
+                    SetCurrent(_initialTab);
+            };
             dgv.CellDoubleClick += dgv_CellDoubleClick;
         }
 
@@ -31,12 +37,6 @@ namespace textktx.CACFORM
         private static readonly string[] COL_PHONG = { "Tất cả", "Khu", "MaPhong", "LoaiPhong", "SucChua", "DienTich", "DonGia", "DangO", "TrangThai" };
         private static readonly string[] COL_PDK = { "Tất cả", "MaPDK", "MSSV", "TenSV", "MaNV", "TenNV", "Khu", "MaPhong", "HocKi", "NamHoc", "NgayGioDK", "ThoiHan", "NgayBD" };
         private static readonly string[] COL_HD = { "Tất cả", "MaHD", "Nam", "Thang", "NgayHD", "Khu", "MaPhong", "MaNV", "TenNV", "TongTienDichVu" };
-
-        private void FormTimkiem_Shown(object sender, EventArgs e)
-        {
-            if (timKiemNhanVien)
-                BeginInvoke(new Action(() => SetCurrent(TableKind.NhanVien)));
-        }
 
         public void ShowSinhVien() => btnSinhVien_Click(this, EventArgs.Empty);
 
@@ -121,10 +121,10 @@ namespace textktx.CACFORM
             if (e.RowIndex < 0) return;
 
             // Nếu là nhân viên hoặc sinh viên → chọn rồi thoát
-            if (_current == TableKind.NhanVien || _current == TableKind.SinhVien)
+            if ((_current == TableKind.NhanVien || _current == TableKind.SinhVien))
             {
+               // MessageBox.Show("Check Sv hoặc Nv");
                 PickCurrentRow(e.RowIndex);
-                return;
             }
 
             // Chỉ xử lý khi đang ở tab Hóa đơn
@@ -197,7 +197,12 @@ namespace textktx.CACFORM
             {
                 var vm = dgv.Rows[rowIndex].DataBoundItem as NhanVienVm;
                 if (vm == null) return;
+
+                // Chỉ invoke nếu có nơi nhận
                 NhanVienSelected?.Invoke(vm);
+
+                // Chỉ đóng khi được cấu hình đóng
+                if (_closeOnPick) Close();
                 return;
             }
 
@@ -205,9 +210,13 @@ namespace textktx.CACFORM
             {
                 var svm = dgv.Rows[rowIndex].DataBoundItem as DAL.Services.SinhVienVm;
                 if (svm == null) return;
+
                 SinhVienSelected?.Invoke(svm);
+
+                if (_closeOnPick) Close();
                 return;
             }
         }
+
     }
 }

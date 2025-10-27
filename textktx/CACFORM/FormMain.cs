@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -78,9 +79,12 @@ namespace textktx.CACFORM
 
         private void button10_Click(object sender, EventArgs e)
         {
-            FormTimkiem formTimkiem = new FormTimkiem(false);
-            formTimkiem.Show();
+            // Khi mở từ Main, KHÔNG đóng khi double-click
+            var f = new FormTimkiem(initialTab: TableKind.NhanVien, closeOnPick: false);
+            f.Show(this);
         }
+
+
 
         private void button11_Click(object sender, EventArgs e)
         {

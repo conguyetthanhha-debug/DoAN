@@ -20,14 +20,16 @@
             this.pnContainer = new System.Windows.Forms.Panel();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbDonVi = new System.Windows.Forms.Label();
-            this.btnThemDV = new System.Windows.Forms.Button();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.cmbTenDV = new System.Windows.Forms.ComboBox();
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbTenDV = new System.Windows.Forms.Label();
             this.pnContainerBottom = new System.Windows.Forms.Panel();
             this.btnHoanTat = new System.Windows.Forms.Button();
+            this.btnThemDV = new System.Windows.Forms.Button();
             this.pnContainerTop = new System.Windows.Forms.Panel();
             this.txtThang = new System.Windows.Forms.ComboBox();
             this.txtNamHoc = new System.Windows.Forms.TextBox();
@@ -41,16 +43,14 @@
             this.lbPhong = new System.Windows.Forms.Label();
             this.lbKhu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnTop.SuspendLayout();
             this.pnContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.pnContainerBottom.SuspendLayout();
             this.pnContainerTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTop
@@ -116,6 +116,26 @@
             this.panel1.Size = new System.Drawing.Size(976, 160);
             this.panel1.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(875, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 49);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Tạo QR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(716, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // lbDonVi
             // 
             this.lbDonVi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -124,19 +144,6 @@
             this.lbDonVi.Size = new System.Drawing.Size(220, 26);
             this.lbDonVi.TabIndex = 0;
             this.lbDonVi.Text = "Đơn vị tính:";
-            // 
-            // btnThemDV
-            // 
-            this.btnThemDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnThemDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnThemDV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThemDV.Location = new System.Drawing.Point(865, 6);
-            this.btnThemDV.Name = "btnThemDV";
-            this.btnThemDV.Size = new System.Drawing.Size(108, 49);
-            this.btnThemDV.TabIndex = 2;
-            this.btnThemDV.Text = "Thêm";
-            this.btnThemDV.UseVisualStyleBackColor = false;
-            this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click_1);
             // 
             // numSoLuong
             // 
@@ -208,6 +215,19 @@
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = false;
             this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
+            // 
+            // btnThemDV
+            // 
+            this.btnThemDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThemDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnThemDV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnThemDV.Location = new System.Drawing.Point(865, 6);
+            this.btnThemDV.Name = "btnThemDV";
+            this.btnThemDV.Size = new System.Drawing.Size(108, 49);
+            this.btnThemDV.TabIndex = 2;
+            this.btnThemDV.Text = "Thêm";
+            this.btnThemDV.UseVisualStyleBackColor = false;
+            this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click_1);
             // 
             // pnContainerTop
             // 
@@ -338,26 +358,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Tháng:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(716, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(875, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 49);
-            this.button1.TabIndex = 8;
-            this.button1.Text = " ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -373,11 +373,11 @@
             this.pnContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             this.pnContainerBottom.ResumeLayout(false);
             this.pnContainerTop.ResumeLayout(false);
             this.pnContainerTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

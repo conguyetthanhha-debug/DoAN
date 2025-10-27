@@ -115,10 +115,9 @@ namespace textktx.CACFORM
         // ===== Check: mở FormTimkiem và auto chuyển tab Sinh viên =====
         private void button1_Click(object sender, EventArgs e)
         {
-            var f = new FormTimkiem();
+            var f = new FormTimkiem(initialTab: TableKind.SinhVien, closeOnPick: true);
             f.SinhVienSelected += OnSinhVienPicked;
             f.Show(this);
-            f.ShowSinhVien(); // ngay lập tức chuyển sang Sinh viên
         }
 
         private void OnSinhVienPicked(SinhVienVm vm)

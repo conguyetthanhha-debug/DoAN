@@ -290,9 +290,9 @@
             // 
             // lbGioiTinh
             // 
-            this.lbGioiTinh.Location = new System.Drawing.Point(44, 193);
+            this.lbGioiTinh.Location = new System.Drawing.Point(34, 194);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(85, 30);
+            this.lbGioiTinh.Size = new System.Drawing.Size(99, 30);
             this.lbGioiTinh.TabIndex = 53;
             this.lbGioiTinh.Text = "Giới tính";
             // 

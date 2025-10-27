@@ -31,11 +31,8 @@ II. CHỨC NĂNG
 • Tìm kiếm thông tin sinh viên.
 • Tìm kiếm thông tin nhân viên.
 • Tìm kiếm phòng.
-• Tìm kiếm hóa đơn.
-
-4. Xuất hóa đơn
-• Xuất hóa đơn sinh hoạt hằng tháng của phòng.";
-            rtb.SelectionStart = 0; // cuộn lên đầu
+• Tìm kiếm hóa đơn.";
+            rtb.SelectionStart = 0; 
             rtb.ScrollToCaret();
         }
     }
